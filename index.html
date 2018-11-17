@@ -9,32 +9,35 @@
 <body>
 
 	<header class="main-header">
-		<h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-
-		<div class="top-line">
-			<a>
-				<div class="logo header-logo">Техномарт</div>
-			</a>
-			<p class="main-search">Поиск</p>
-			<p class="site-bookmarks">Закладки</p>
-			<p class="site-cart">Корзина</p>
+		<section class="main-header-top">
+			<h2>Навигация по заказам</h2>
+			<a class="logo header-logo">Техномарт</a>
+			<form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+				<input type="text" name="search" placeholder="Поиск">
+				<button class="search-button" type="submit"></button>
+			</form>
+			<a href="#" class="site-bookmarks">Закладки: <span>0</span></a>
+			<a href="#" class="site-cart">Корзина: <span>0</span></a>
 			<a class="button button-order" href="#">Оформить заказ</a>
-		</div>
+		</section>
 
-		<div class="contacts-text">
-			<p class="text-phone">+7 (812) 555-05-55</p>
-			<p class="text-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-		</div>
+		<section class="main-header-middle">
+				<h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
-		<ul class="user-navigation">
-			<li>
-				<a class="login-link-enter" href="login.html">Войти</a>
-			</li>
-			<li>
-				<a class="login-link-registration" href="registration.html">Регистрация</a>
-			</li>
-		</ul>
+			<div class="contacts-text">
+				<p class="text-phone">+7 (812) 555-05-55</p>
+				<p class="text-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+			</div>
 
+			<ul class="user-navigation">
+				<li>
+					<a class="login-link-enter" href="login.html">Войти</a>
+				</li>
+				<li>
+					<a class="login-link-registration" href="registration.html">Регистрация</a>
+				</li>
+			</ul>
+	</section>
 		<nav class="main-navigation">
 			<ul class="site-navigation site-navigation-header">
 				<li class="site-navigation-current"><a>Главная</a></li>
@@ -169,7 +172,7 @@
 
 			<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
 				покупки приятными.</p>
-				
+
 			<div class="services-slider">
 				<!-- Здесь будет слайдер -->
 			</div>
