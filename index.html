@@ -9,8 +9,7 @@
 <body>
 
 	<header class="main-header">
-		<section class="main-header-top">
-			<h2>Навигация по заказам</h2>
+		<div class="product-navigation-header">
 			<a class="logo header-logo">Техномарт</a>
 			<form class="header-search" action="https://echo.htmlacademy.ru" method="get">
 				<input type="text" name="search" placeholder="Поиск">
@@ -19,9 +18,9 @@
 			<a href="#" class="site-bookmarks">Закладки: <span>0</span></a>
 			<a href="#" class="site-cart">Корзина: <span>0</span></a>
 			<a class="button button-order" href="#">Оформить заказ</a>
-		</section>
+		</div>
 
-		<section class="main-header-middle">
+		<div class="contacts-header">
 			<h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
 			<div class="contacts-text">
@@ -37,13 +36,13 @@
 					<a class="login-link-registration" href="registration.html">Регистрация</a>
 				</li>
 			</ul>
-		</section>
+		</div>
 
 		<nav class="main-navigation">
-			<ul class="site-navigation site-navigation-header">
+			<ul class="site-navigation">
 				<li class="site-navigation-current"><a>Главная</a></li>
 				<li><a href="#">Компания</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="inner.html">Каталог</a></li>
 				<li><a href="#">Новости</a></li>
 				<li><a href="#">Спецпредложения</a></li>
 				<li><a href="#">Доставка</a></li>
@@ -82,7 +81,7 @@
 					<a href="#" class="button button-promo">Бесплатно</a>
 				</li>
 			</ul>
-<!-- -------------------------- slider ------------------------------------ -->
+			<!-- -------------------------- slider ------------------------------------ -->
 			<ul class="promo-slider">
 				<li class="promo-slide-1">
 					<div class="title">
@@ -101,7 +100,7 @@
 					<a class="button button-promo-slide" href="#">Открыть каталог</a>
 				</li>
 			</ul>
-<!-- ---------------------------------------------------------------------- -->
+			<!-- ---------------------------------------------------------------------- -->
 		</section>
 
 		<section class="popular-products">
@@ -189,7 +188,7 @@
 
 			<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
 				покупки приятными.</p>
-<!-- ------------------- slider ------------------------------ -->
+			<!-- ------------------- slider ------------------------------ -->
 			<ul class="services-button">
 				<li>Доставка</li>
 				<li>Гарантия</li>
@@ -199,11 +198,14 @@
 			<ul class="services-slider">
 				<li class="services-slide-1">
 					<h3>Доставка</h3>
-					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, </p>
+					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+					</p>
 				</li>
 				<li class="services-slide-2">
 					<h3>Гарантия</h3>
-					<p>Если купленный у нас товар поломается или заискрит, 	а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+					<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
+						вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите
+						как-нибудь сами.</p>
 				</li>
 				<li class="services-slide-3">
 					<h3>Кредит</h3>
@@ -211,7 +213,7 @@
 					<a class="button button-services-slide" href="#"></a>
 				</li>
 			</ul>
-<!-- --------------------------------------------------------- -->
+			<!-- --------------------------------------------------------- -->
 		</section>
 
 		<section class="about-company">
@@ -243,37 +245,30 @@
 	</main>
 
 	<footer class="main-footer">
-		<section class="top-footer">
-			<h2 class="visually-hidden">Верхний раздел футера</h2>
-			<a href="index.html">
-				<div class="logo footer-logo">Техномарт</div>
-			</a>
+		<div class="site-navigation-footer">
+			<a class="logo footer-logo" href="index.html">Техномарт</a>
 
-			<ul class="site-navigation site-navigation-footer">
+			<ul class="site-navigation">
 				<li><a href="#">Компания</a></li>
 				<li><a href="#">Новости</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="inner.html">Каталог</a></li>
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-		</section>
+		</div>
 
-		<section class="middle-footer">
-			<h2 class="visually-hidden">Cредний раздел футера</h2>
-
+		<div class="navigation-promo-footer">
 			<p class="contacts-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
 
-			<ul class="navigation-promo">
+			<ul>
 				<li><a href="#">Материалы</a></li>
 				<li><a href="#">Техника</a></li>
 				<li><a href="#">Инструмент</a></li>
 				<li><a href="#">Спецпредложения</a></li>
 			</ul>
-		</section>
+		</div>
 
-		<section class="bottom-footer">
-			<h2 class="visually-hidden">Нижний раздел футера</h2>
-
+		<div class="copyright">
 			<p class="text-copyright">
 				© 2010–2017 Компания «Техномарт»
 				<br>Все права защищены
@@ -292,7 +287,7 @@
 			<p>Разработано —
 				<a class="site-link" href="#">htmlacademy.ru</a>
 			</p>
-		</section>
+		</div>
 	</footer>
 
 </body>
