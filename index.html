@@ -9,10 +9,16 @@
 <body>
 
 	<header class="main-header">
-		<div class="product-navigation-header">
+		<div class="search-navigation">
 			<a class="logo header-logo">Техномарт</a>
 			<form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-				<input type="text" name="search" placeholder="Поиск">
+				<p>
+					<label class="visually-hidden" for="search">
+						Поиск
+					</label>
+					<input type="text" id="search" name="search" placeholder="Поиск">
+				</p>
+
 				<button class="search-button" type="submit"></button>
 			</form>
 			<a href="#" class="site-bookmarks">Закладки: <span>0</span></a>
@@ -51,9 +57,9 @@
 		</nav>
 	</header>
 
-	<main>
+	<main class="container">
 		<section class="technomart-promo">
-			<h2 class="visually-hidden">Рекламный раздел сайта</h2>
+			<h2 class="visually-hidden">Рекламный блок</h2>
 
 			<ul class="promo-adventages">
 				<li class="promo-item promo-stock">
@@ -306,6 +312,41 @@
 			</p>
 		</div>
 	</footer>
+
+	<!-- modal-blocks -->
+
+	<section class="modal modal-login">
+		<h2 class="visually-hidden">Личный кабинет</h2>
+		<form class="user-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="user-name">Ваше имя:</label>
+				<input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+			</p>
+
+			<p>
+				<label for="user-mail">Ваш e-mail:</label>
+				<input type="text" id="user-mail" name="user-mail" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="user-message">Текст письма:</label>
+				<textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+		<button type="button" class="button button-close">Закрыть</button>
+	</section>
+
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">
+			Как до нас добраться
+		</h2>
+		<p>
+			<img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+		</p>
+		<button class="modal-close" type="button">
+			Закрыть
+		</button>
+	</section>
 
 </body>
 
