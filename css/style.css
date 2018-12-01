@@ -758,6 +758,9 @@ fieldset label {
 }
 
 /* modal */
+.modal {
+	display: none;
+}
 
 .modal {
 	background-color: #ffffff;
