@@ -630,6 +630,8 @@ img {
 
 fieldset {
 	border: none;
+	margin: 0;
+	padding: 0;
 }
 
 fieldset:not(:last-of-type) {
@@ -637,6 +639,10 @@ fieldset:not(:last-of-type) {
 }
 
 fieldset legend {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 15px;
+
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 700;
 	font-size: 17px;
@@ -654,7 +660,105 @@ fieldset label {
 	color: #000000;
 }
 
+.filter-option {
+	position: relative;
+	margin: 0;
+	padding-left: 35px;
+	padding-bottom: 25px;
+}
+
+.filter-option label {
+
+	display: block;
+
+	cursor: pointer;
+	user-select: none;
+}
+
+label svg {
+	display: none;
+}
+
+input[type="checkbox"]:checked + label::before {
+	display: none;
+}
+
+input[type="checkbox"]:checked ~ label svg {
+	display: block;
+	fill: #c5c5c5;
+	position: absolute;
+	content: "";
+	top: -2px;
+	left: 0;
+	width: 27px;
+	height: 23px;
+}
+
+input[type="radio"]:disabled + label,
+input[type="checkbox"]:disabled + label {
+	opacity: 0.4;
+}
+
+input[type="radio"]:disabled + label::before,
+input[type="radio"]:disabled:checked + label::after,
+input[type="checkbox"]:disabled + label svg {
+	opacity: 0.3;
+}
+
+input[type="checkbox"] + label::before {
+	position: absolute;
+	content: "";
+	top: -2px;
+	left: 0;
+	width: 19px;
+	height: 19px;
+	background-color: transparent;
+	border: 2px solid #b5b5b5;
+	border-radius: 2px;
+}
+
+input[type="checkbox"]:hover + label::before {
+	border-color: #c5c5c5;
+}
+
+input[type="radio"] + label::before {
+	position: absolute;
+	content: "";
+	top: -2px;
+	left: 0;
+	width: 19px;
+	height: 19px;
+	background-color: transparent;
+	border: 2px solid #c5c5c5;
+	border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::after {
+	position: absolute;
+	content: "";
+	top: 5px;
+	left: 7px;
+	width: 9px;
+	height: 9px;
+	background-color: #c5c5c5;
+	border-radius: 50%;
+}
+
+
+input[type="radio"]:checked:hover + label::after {
+	background-color: #b5b5b5;
+	
+}
+
+input[type="radio"]:hover + label::before,
+input[type="radio"]:checked:hover + label::before {
+	border-color: #b5b5b5;
+}
+
+
+
 .filter-button {
+	margin-top: 80px;
 	padding: 9px 38px;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
