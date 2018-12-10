@@ -679,11 +679,11 @@ label svg {
 	display: none;
 }
 
-input[type="checkbox"]:checked + label::before {
+.option-checkbox:checked + label::before {
 	display: none;
 }
 
-input[type="checkbox"]:checked ~ label svg {
+.option-checkbox:checked ~ label svg {
 	display: block;
 	fill: #c5c5c5;
 	position: absolute;
@@ -694,18 +694,18 @@ input[type="checkbox"]:checked ~ label svg {
 	height: 23px;
 }
 
-input[type="radio"]:disabled + label,
-input[type="checkbox"]:disabled + label {
+.option-radio:disabled + label,
+.option-checkbox:disabled + label {
 	opacity: 0.4;
 }
 
-input[type="radio"]:disabled + label::before,
-input[type="radio"]:disabled:checked + label::after,
-input[type="checkbox"]:disabled + label svg {
+.option-radio:disabled + label::before,
+.option-radio:disabled:checked + label::after,
+.option-checkbox:disabled + label svg {
 	opacity: 0.3;
 }
 
-input[type="checkbox"] + label::before {
+.option-checkbox + label::before {
 	position: absolute;
 	content: "";
 	top: -2px;
@@ -717,11 +717,11 @@ input[type="checkbox"] + label::before {
 	border-radius: 2px;
 }
 
-input[type="checkbox"]:hover + label::before {
+.option-checkbox:hover + label::before {
 	border-color: #c5c5c5;
 }
 
-input[type="radio"] + label::before {
+.option-radio + label::before {
 	position: absolute;
 	content: "";
 	top: -2px;
@@ -733,7 +733,7 @@ input[type="radio"] + label::before {
 	border-radius: 50%;
 }
 
-input[type="radio"]:checked + label::after {
+.option-radio:checked + label::after {
 	position: absolute;
 	content: "";
 	top: 5px;
@@ -745,13 +745,13 @@ input[type="radio"]:checked + label::after {
 }
 
 
-input[type="radio"]:checked:hover + label::after {
+.option-radio:checked:hover + label::after {
 	background-color: #b5b5b5;
 	
 }
 
-input[type="radio"]:hover + label::before,
-input[type="radio"]:checked:hover + label::before {
+.option-radio:hover + label::before,
+.option-radio:checked:hover + label::before {
 	border-color: #b5b5b5;
 }
 
