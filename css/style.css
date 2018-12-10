@@ -1484,7 +1484,7 @@ input[type="radio"]:checked:hover + label::before {
 /* modal */
 
 .modal {
-	display: none;
+	display: block;
 }
 
 .modal {
@@ -1508,6 +1508,12 @@ input[type="radio"]:checked:hover + label::before {
 	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
 	box-sizing: border-box;
 	z-index: 1;
+}
+
+.form-login .modal-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .form-login {
@@ -1590,7 +1596,10 @@ input[type="radio"]:checked:hover + label::before {
 }
 
 .buttons-wrapper {
+	width: 100%;
 	padding: 37px 0;
+
+	background-color: #f4f4f4;
 }
 
 .button-login {
@@ -1722,6 +1731,3 @@ input[type="radio"]:checked:hover + label::before {
 }
 
 
-.buttons-wrapper {
-	background-color: #f4f4f4;
-}
