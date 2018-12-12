@@ -52,7 +52,7 @@ img {
 	font-weight: 400;
 
 	background-color: #ee3643;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 .button:hover {
@@ -185,14 +185,6 @@ img {
 	text-align: center;
 	font-size: 24px;
 	line-height: 24px;
-}
-
-.footer-logo {
-	padding: 17px 42px 16px;
-	width: 136px;
-	text-align: center;
-	font-size: 30px;
-	line-height: 30px;
 }
 
 .header-search  {
@@ -697,12 +689,16 @@ label svg {
 .option-radio:disabled + label,
 .option-checkbox:disabled + label {
 	opacity: 0.4;
+
+	cursor: not-allowed;
 }
 
 .option-radio:disabled + label::before,
 .option-radio:disabled:checked + label::after,
 .option-checkbox:disabled + label svg {
 	opacity: 0.3;
+
+	cursor: not-allowed;
 }
 
 .option-checkbox + label::before {
@@ -714,7 +710,7 @@ label svg {
 	height: 19px;
 	background-color: transparent;
 	border: 2px solid #b5b5b5;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 .option-checkbox:hover + label::before {
@@ -825,21 +821,58 @@ label svg {
 }
 
 .promo-adventages {
-	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 .promo-item {
+	display: flex;
+	position: relative;
+	margin: 0;
+	width: 300px;
+	min-height: 123px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+
 	color: #ffffff;
 }
 
-.promo-stock {
-	background-color: #ffbf47;
+.promo-item .flag {
+	top: 0;
+	right: 0;
 }
 
-.button-promo {
+.promo-description {
+	margin: 0;
+	width: 160px;
+}
+
+.promo-item b {
+	display: block;
+	margin-bottom: 12px;
+	margin-top: 23px;
+	margin-left: 23px;
+
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.promo-item .button-promo {
+	display: block;
+	margin-left: 25px;
+	margin-bottom: 20px;
+	padding: 10px 24px;
+	white-space: nowrap;
+	font-size: 14px;
+	line-height: 18px;
 	text-transform: uppercase;
+	color: #ffffff;
+
 	background-color: rgba(0, 0, 0, .10);
 }
+
 .button-promo:hover {
 	background-color: rgba(0, 0, 0, .20);
 }
@@ -847,40 +880,168 @@ label svg {
 	background-color: rgba(0, 0, 0, .30);
 }
 
+.promo-image {
+	align-self: center;
+	text-align: center;
+	width: 140px;
+}
+
+.promo-stock {
+	background-color: #ffbf47;
+}
+
 .promo-tool {
 	background-color: #3bbce3;
 }
+
 .promo-technics {
 	background-color: #dc91d8;
 }
+
+.promo-wrapper {
+	box-sizing: border-box;
+	order: 2;
+}
+
 .promo-discount {
 	background-color: #8ed78f;
+	margin-right: 0;
 }
 .promo-delivery {
 	background-color: #ffc047;
-}
-.promo-item b {
-	font-size: 24px;
-	line-height: 30px;
-	font-weight: 700;
-}
-
-.promo-item a {
-	font-size: 14px;
-	line-height: 18px;
-	color: #ffffff;
+	margin-right: 0;
+	margin-bottom: 0;
 }
 
 /* slider ??? */
-.promo-slider {
-	list-style: none;
+.slider {
+	position: relative;
+	order: 1;
 }
 
-.slide-1{
-	background-color: #dac8b5;
+.slider-controls {
+	position: absolute;
+	left: 50%;
+	bottom: 36px;
+	z-index: 100;
+
+	width: 40px;
+	height: 15px;
+
+	text-align: center;
+	font-size: 0;
+	transform: translateX(-50%);
 }
+
+.slider-controls i {
+	position: relative;
+
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 5px;
+
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider-controls .active::before {
+	content: "";
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 2;
+
+	width: 6px;
+	height: 6px;
+	margin: -3px;
+
+	background-color: #ee3643;
+
+	border-radius: 50%;
+}
+
+.slider-controls i::after {
+	content: "";
+
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+
+	width: 10px;
+	height: 10px;
+
+	background: #ffffff;
+	border-radius: 50%;
+}
+
+.slider .prev, .slider .next {
+	position: absolute;
+	top: 115px;
+	display: block;
+	width: 22px;
+	height: 40px;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+.slider .prev{
+	left: 25px;
+	background-image: url(../img/icon-left.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.slider .next{
+	right: 40px;
+	background-image: url(../img/icon-right.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.slider-item {
+	display: none;
+}
+
+.slider-item {
+	padding: 25px;
+	padding-bottom: 22px;
+}
+
+.slide-1 {
+	display: none;
+}
+
+.slide-2{
+	display: block;
+}
+
+.slide-1 {
+	background-color: #dac8b5;
+	background-image: url(../img/Perforators.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .slide-2{
 	background-color: #5c4841;
+	background-image: url(../img/Drills.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slider-list {
+	margin: 0;
+	margin-right: 20px;
+	padding: 0;
+	width: 620px;
+	min-height: 266px;
+	list-style: none;
+
+	background-color: #c5c5c5;
 }
 
 .text-promo-item {
@@ -888,6 +1049,8 @@ label svg {
 
 }
 .text-promo-item h3 {
+	margin: 0;
+	margin-bottom: 5px;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
@@ -895,16 +1058,25 @@ label svg {
 }
 
 .text-promo-item p {
-	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	margin-bottom: 120px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
 }
 
 .button-slide {
+	display: inline-block;
+	width: 196px;
+	padding: 10px;
+	text-align: center;
 	text-transform: uppercase;
+	box-sizing: border-box;
 }
 
+.promo-item:nth-of-type(3),
+.promo-item:nth-of-type(4),
+.promo-item:nth-of-type(5),
 .popular-products .products-item:nth-child(4n),
 .sort-products .products-item:nth-child(3n) {
 	margin-right: 0;
@@ -945,16 +1117,19 @@ label svg {
 	box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
 }
 
-.products-item .flag{
-	position:absolute;
-	top:-1px;
-	right:-1px;
-	width:60px;
-	height:60px;
-	overflow:hidden;
-	 z-index:20;
+
+.flag {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	z-index: 20;
 }
-.products-item .flag-new{
+
+
+.flag-new {
 	background-image: url("../img/new-flag.png");
 	background-position: 0 0;
 	background-repeat: no-repeat;
@@ -1320,6 +1495,14 @@ label svg {
 	margin-bottom: 30px;
 }
 
+.footer-logo {
+	padding: 17px 42px 16px;
+	width: 136px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
+}
+
 .site-navigation-footer {
 	margin: 0;
 	padding: 39px 0 5px;
@@ -1484,7 +1667,7 @@ label svg {
 /* modal */
 
 .modal {
-	display: block;
+	display: none;
 }
 
 .modal {
