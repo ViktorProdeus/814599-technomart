@@ -31,8 +31,9 @@
 		<div class="container">
 
 			<div class="contacts-header">
-				<h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-
+				<div class="title-wrapper">
+					<h1 class="main-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
+				</div>
 				<div class="contacts-text">
 					<p class="text-phone">+7 (812) 555-05-55</p>
 					<p class="text-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -66,272 +67,291 @@
 		</div>
 	</header>
 
-	<main class="container">
-		<section class="promo">
-			<h2 class="visually-hidden">Рекламный блок</h2>
+	<main>
+		<div class="container">
+			<section class="promo">
+				<h2 class="visually-hidden">Рекламный блок</h2>
 
-			<div class="promo-adventages">
+				<div class="promo-adventages">
 
-				<div class="promo-item promo-stock">
-					<div class="flag flag-new"><span class="visually-hidden">новинка</span></div>
-					<p class="promo-description">
-						<b>Материалы</b>
-						<a href="#" class="button button-promo">На любой вкус</a>
-					</p>
-					<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="65">
-							<path d="M37.9 30.438v10.87s.105 2.735-2.825 2.735c-3.07 0-3.125-2.735-3.125-2.735V34.9c0-.24-.336-1.9-2.32-1.9-2.625 0-2.67 1.877-2.67 1.877v19.22s.03 1.863-2.464 1.863S22 53.96 22 53.96V40.016s0-2.945-3.805-2.945c-4.054 0-3.967 3.125-3.967 3.125v3.728s-.12 2.945-4.688 2.945-4.628-4.5-4.628-4.5v-12.42C3.168 28.976 0 26.67 0 26.67v29.332S2.988 65 22 65s22-8.695 22-8.695V26.67c-2.938 2.83-6.1 3.767-6.1 3.767zM22 0C1.688 0 0 19.875 0 19.875v3.062C8.438 29.188 22 29 22 29s13.562.188 22-6.062v-3.062C44 19.875 42.312 0 22 0zm0 25c-11.75 0-14.312-2.375-14.312-2.375C13.938 19.75 22 19.875 22 19.875s8.062-.125 14.312 2.75c0 0-2.562 2.375-14.312 2.375zm0-12.375c-9.562 0-17.688 2.938-17.688 2.938C8.875 2.625 22 3.062 22 3.062s13.125-.438 17.688 12.5c0 0-8.126-2.937-17.688-2.937z"
-							 fill="#fff" /></svg></div>
-				</div>
+					<div class="promo-item promo-stock">
+						<div class="flag flag-new"><span class="visually-hidden">новинка</span></div>
+						<p class="promo-description">
+							<b>Материалы</b>
+							<a href="#" class="button button-promo">На любой вкус</a>
+						</p>
+						<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="65">
+								<path d="M37.9 30.438v10.87s.105 2.735-2.825 2.735c-3.07 0-3.125-2.735-3.125-2.735V34.9c0-.24-.336-1.9-2.32-1.9-2.625 0-2.67 1.877-2.67 1.877v19.22s.03 1.863-2.464 1.863S22 53.96 22 53.96V40.016s0-2.945-3.805-2.945c-4.054 0-3.967 3.125-3.967 3.125v3.728s-.12 2.945-4.688 2.945-4.628-4.5-4.628-4.5v-12.42C3.168 28.976 0 26.67 0 26.67v29.332S2.988 65 22 65s22-8.695 22-8.695V26.67c-2.938 2.83-6.1 3.767-6.1 3.767zM22 0C1.688 0 0 19.875 0 19.875v3.062C8.438 29.188 22 29 22 29s13.562.188 22-6.062v-3.062C44 19.875 42.312 0 22 0zm0 25c-11.75 0-14.312-2.375-14.312-2.375C13.938 19.75 22 19.875 22 19.875s8.062-.125 14.312 2.75c0 0-2.562 2.375-14.312 2.375zm0-12.375c-9.562 0-17.688 2.938-17.688 2.938C8.875 2.625 22 3.062 22 3.062s13.125-.438 17.688 12.5c0 0-8.126-2.937-17.688-2.937z"
+								 fill="#fff" /></svg></div>
+					</div>
 
-				<div class="promo-item promo-tool">
-					<div class="flag"><span class="visually-hidden">не новинка</span></div>
-					<p class="promo-description">
-						<b>Инструмент</b>
-						<a href="#" class="button button-promo">На все случаи</a>
-					</p>
-					<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="61">
-							<path d="M5.04 58.95S5.04 61 6.907 61h27.02s2-.184 2-1.984V47.942H5.04V58.95zM73.875 8.016H60.387c-.62-2.287-2.07-3.9-3.762-3.9h-7.542v12.75h7.542c1.7 0 3.14-1.604 3.762-3.9h13.488c.575 0 1.042-1.112 1.042-2.484s-.467-2.484-1.042-2.484zM2.103 0C.167 0 0 2.04 0 2.04v15.812c0 2.936 2.903 3.002 2.903 3.002H11.9c1.935 0 1.6 1.334 1.6 1.334L10.776 37.4c-.267 2.203-1.868 3.604-1.868 3.604l-3.002 1.668c-.867.467-.867 2.2-.867 2.2h30.9v-.734c0-1.467-6.472-3.135-9.073-3.402s-2.068-2.002-2.068-2.002l1.067-7.805h3.002L30 23.057h-3.002l.33-2.737 8.6-.13c5.805-.6 10.008-4.07 10.008-4.07v-12C41.333.84 33.993 0 33.993 0h-31.9zM36 4.938v.03c0 .55-.45 1-1 1H5.03c-.55 0-1-.45-1-1v-.03c0-.55.45-1 1-1H35c.55 0 1 .45 1 1z"
-							 fill="#fff" /></svg></div>
-				</div>
-
-				<div class="promo-item promo-technics">
-					<div class="flag"><span class="visually-hidden">не новинка</span></div>
-					<p class="promo-description">
-						<b>Техника</b>
-						<a href="#" class="button button-promo">Для стройки</a>
-					</p>
-					<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="78" height="62">
-							<path d="M16.125 29.75A16.13 16.13 0 0 0 0 45.875 16.13 16.13 0 0 0 16.125 62 16.13 16.13 0 0 0 32.25 45.875c.001-8.907-7.22-16.126-16.125-16.126zm0 23.433a7.31 7.31 0 0 1-7.307-7.307 7.31 7.31 0 0 1 7.307-7.308 7.31 7.31 0 0 1 7.307 7.308 7.31 7.31 0 0 1-7.307 7.307zm44.73-7.3c-4.453 0-8.062 3.6-8.062 8.062A8.06 8.06 0 0 0 60.854 62c4.454 0 8.062-3.6 8.062-8.063s-3.608-8.062-8.062-8.062zm0 13.126c-2.796 0-5.062-2.268-5.062-5.063s2.267-5.062 5.062-5.062 5.062 2.268 5.062 5.062S63.65 59 60.854 59zm17.043-9.272l-2.46-18.414c-.547-4.14-3.625-4.688-3.625-4.688L66 25.946V14h-3v5.833h-4v5.295L47.188 23.75 36.626 1.875C35.814.062 33.5 0 33.5 0S11.125 2.375 8.75 3 5.312 6.167 5.312 6.167C3.004 12.537 3 23.463 3.046 26.422a23.33 23.33 0 0 1 13.08-3.986c12.944 0 23.438 10.493 23.438 23.44a23.43 23.43 0 0 1-1.064 7h10.164c.4-6.402 5.7-11.48 12.2-11.48s11.802 5.077 12.2 11.48H75c3.64 0 2.898-3.148 2.898-3.148zM23.083 19.833h-6.958V6.167h6.958v13.666zm10 0h-6.958V6.167h6.958v13.666zM53.016 36H49v-7h4.016v7zm7 0H56v-7h4.016v7zm7 0H63v-7h4.016v7z"
-							 fill="#fff" /></svg></div>
-				</div>
-				<div class="promo-wrapper">
-					<div class="promo-item promo-discount">
+					<div class="promo-item promo-tool">
 						<div class="flag"><span class="visually-hidden">не новинка</span></div>
 						<p class="promo-description">
-							<b>Скидки 50%</b>
-							<a href="#" class="button button-promo">На 350 Товаров</a>
+							<b>Инструмент</b>
+							<a href="#" class="button button-promo">На все случаи</a>
 						</p>
-						<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="59" height="72">
-								<g fill="#fff">
-									<path d="M58.34 20.545c-.566-.753-1.454-1.195-2.396-1.195h-38.67L14.8 11.965H3.058a3 3 0 1 0 0 6h7.424l13.5 40.285h25.16a3 3 0 1 0 0-6H28.3l-1.726-5.15h23.12a3 3 0 0 0 2.884-2.172l6.25-21.75c.26-.906.08-1.88-.487-2.634zm-7.78 9.68h-4.8V25.35h6.21l-1.4 4.876zm-17.617 0V25.35h6.807v4.875h-6.807zm6.807 6V41.1h-6.807v-4.875h6.807zM26.942 25.35v4.875H20.92l-1.634-4.875h7.657zM22.93 36.226h4.013V41.1h-2.38l-1.634-4.875zM45.75 41.1v-4.875h3.086l-1.4 4.875H45.75z" />
-									<circle cx="27.406" cy="66.094" r="5.781" />
-									<circle cx="44.844" cy="66.094" r="5.781" />
-									<path d="M29.335 9.7l7.547 5.492c.914.665 2.174.44 2.818-.494s.43-2.232-.48-2.895l-2.373-1.726 9.436-5.1L50.91 17h4.347L49.214 1.31A2.05 2.05 0 0 0 48.037.126a1.97 1.97 0 0 0-1.643.109L33.146 7.382l-3.022-2.2c-.872-.634-2.07-.462-2.742.4L18.9 16.37c-.17.18-.305.395-.405.628h5.106l5.733-7.3z" />
-								</g>
-							</svg></div>
+						<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="61">
+								<path d="M5.04 58.95S5.04 61 6.907 61h27.02s2-.184 2-1.984V47.942H5.04V58.95zM73.875 8.016H60.387c-.62-2.287-2.07-3.9-3.762-3.9h-7.542v12.75h7.542c1.7 0 3.14-1.604 3.762-3.9h13.488c.575 0 1.042-1.112 1.042-2.484s-.467-2.484-1.042-2.484zM2.103 0C.167 0 0 2.04 0 2.04v15.812c0 2.936 2.903 3.002 2.903 3.002H11.9c1.935 0 1.6 1.334 1.6 1.334L10.776 37.4c-.267 2.203-1.868 3.604-1.868 3.604l-3.002 1.668c-.867.467-.867 2.2-.867 2.2h30.9v-.734c0-1.467-6.472-3.135-9.073-3.402s-2.068-2.002-2.068-2.002l1.067-7.805h3.002L30 23.057h-3.002l.33-2.737 8.6-.13c5.805-.6 10.008-4.07 10.008-4.07v-12C41.333.84 33.993 0 33.993 0h-31.9zM36 4.938v.03c0 .55-.45 1-1 1H5.03c-.55 0-1-.45-1-1v-.03c0-.55.45-1 1-1H35c.55 0 1 .45 1 1z"
+								 fill="#fff" /></svg></div>
 					</div>
 
-					<div class="promo-item promo-delivery">
+					<div class="promo-item promo-technics">
 						<div class="flag"><span class="visually-hidden">не новинка</span></div>
 						<p class="promo-description">
-							<b>Доставка</b>
-							<a href="#" class="button button-promo">Бесплатно</a>
+							<b>Техника</b>
+							<a href="#" class="button button-promo">Для стройки</a>
 						</p>
-						<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78"
-							 height="63">
-								<g fill="#fff">
-									<circle cx="25.983" cy="55.5" r="7.5" />
-									<circle cx="59.982" cy="55.5" r="7.5" />
-									<path d="M64 0H11.062c-3.188 0-3 3.125-3 3.125V8H3.47A3.47 3.47 0 0 0 0 11.469a3.47 3.47 0 0 0 3.469 3.469l28.085 1.84.196.043c-.76 3.197-8.938 3.805-8.938 3.805l-8.3.428H5.446c-1.864 0-3.375 1.51-3.375 3.375s1.51 3.375 3.375 3.375l23.656 1.254c-.807 3.153-6.3 3.756-6.3 3.756l-14.75.76V49.19c0 3.188 2.564 3.812 2.564 3.812h2.1c1.173-6.26 6.66-11 13.26-11s12.085 4.74 13.26 11h7.404c1.174-6.26 6.66-11 13.26-11s12.086 4.74 13.26 11h1.71C77.812 53 78 48.938 78 48.938v-15.25C78 14.812 64 0 64 0zM52 23.938v-15h10.062l5.75 15H52z" />
-								</g>
-							</svg></div>
+						<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="78" height="62">
+								<path d="M16.125 29.75A16.13 16.13 0 0 0 0 45.875 16.13 16.13 0 0 0 16.125 62 16.13 16.13 0 0 0 32.25 45.875c.001-8.907-7.22-16.126-16.125-16.126zm0 23.433a7.31 7.31 0 0 1-7.307-7.307 7.31 7.31 0 0 1 7.307-7.308 7.31 7.31 0 0 1 7.307 7.308 7.31 7.31 0 0 1-7.307 7.307zm44.73-7.3c-4.453 0-8.062 3.6-8.062 8.062A8.06 8.06 0 0 0 60.854 62c4.454 0 8.062-3.6 8.062-8.063s-3.608-8.062-8.062-8.062zm0 13.126c-2.796 0-5.062-2.268-5.062-5.063s2.267-5.062 5.062-5.062 5.062 2.268 5.062 5.062S63.65 59 60.854 59zm17.043-9.272l-2.46-18.414c-.547-4.14-3.625-4.688-3.625-4.688L66 25.946V14h-3v5.833h-4v5.295L47.188 23.75 36.626 1.875C35.814.062 33.5 0 33.5 0S11.125 2.375 8.75 3 5.312 6.167 5.312 6.167C3.004 12.537 3 23.463 3.046 26.422a23.33 23.33 0 0 1 13.08-3.986c12.944 0 23.438 10.493 23.438 23.44a23.43 23.43 0 0 1-1.064 7h10.164c.4-6.402 5.7-11.48 12.2-11.48s11.802 5.077 12.2 11.48H75c3.64 0 2.898-3.148 2.898-3.148zM23.083 19.833h-6.958V6.167h6.958v13.666zm10 0h-6.958V6.167h6.958v13.666zM53.016 36H49v-7h4.016v7zm7 0H56v-7h4.016v7zm7 0H63v-7h4.016v7z"
+								 fill="#fff" /></svg></div>
 					</div>
+					<div class="promo-wrapper">
+						<div class="promo-item promo-discount">
+							<div class="flag"><span class="visually-hidden">не новинка</span></div>
+							<p class="promo-description">
+								<b>Скидки 50%</b>
+								<a href="#" class="button button-promo">На 350 Товаров</a>
+							</p>
+							<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="59" height="72">
+									<g fill="#fff">
+										<path d="M58.34 20.545c-.566-.753-1.454-1.195-2.396-1.195h-38.67L14.8 11.965H3.058a3 3 0 1 0 0 6h7.424l13.5 40.285h25.16a3 3 0 1 0 0-6H28.3l-1.726-5.15h23.12a3 3 0 0 0 2.884-2.172l6.25-21.75c.26-.906.08-1.88-.487-2.634zm-7.78 9.68h-4.8V25.35h6.21l-1.4 4.876zm-17.617 0V25.35h6.807v4.875h-6.807zm6.807 6V41.1h-6.807v-4.875h6.807zM26.942 25.35v4.875H20.92l-1.634-4.875h7.657zM22.93 36.226h4.013V41.1h-2.38l-1.634-4.875zM45.75 41.1v-4.875h3.086l-1.4 4.875H45.75z" />
+										<circle cx="27.406" cy="66.094" r="5.781" />
+										<circle cx="44.844" cy="66.094" r="5.781" />
+										<path d="M29.335 9.7l7.547 5.492c.914.665 2.174.44 2.818-.494s.43-2.232-.48-2.895l-2.373-1.726 9.436-5.1L50.91 17h4.347L49.214 1.31A2.05 2.05 0 0 0 48.037.126a1.97 1.97 0 0 0-1.643.109L33.146 7.382l-3.022-2.2c-.872-.634-2.07-.462-2.742.4L18.9 16.37c-.17.18-.305.395-.405.628h5.106l5.733-7.3z" />
+									</g>
+								</svg></div>
+						</div>
+
+						<div class="promo-item promo-delivery">
+							<div class="flag"><span class="visually-hidden">не новинка</span></div>
+							<p class="promo-description">
+								<b>Доставка</b>
+								<a href="#" class="button button-promo">Бесплатно</a>
+							</p>
+							<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+								 width="78" height="63">
+									<g fill="#fff">
+										<circle cx="25.983" cy="55.5" r="7.5" />
+										<circle cx="59.982" cy="55.5" r="7.5" />
+										<path d="M64 0H11.062c-3.188 0-3 3.125-3 3.125V8H3.47A3.47 3.47 0 0 0 0 11.469a3.47 3.47 0 0 0 3.469 3.469l28.085 1.84.196.043c-.76 3.197-8.938 3.805-8.938 3.805l-8.3.428H5.446c-1.864 0-3.375 1.51-3.375 3.375s1.51 3.375 3.375 3.375l23.656 1.254c-.807 3.153-6.3 3.756-6.3 3.756l-14.75.76V49.19c0 3.188 2.564 3.812 2.564 3.812h2.1c1.173-6.26 6.66-11 13.26-11s12.085 4.74 13.26 11h7.404c1.174-6.26 6.66-11 13.26-11s12.086 4.74 13.26 11h1.71C77.812 53 78 48.938 78 48.938v-15.25C78 14.812 64 0 64 0zM52 23.938v-15h10.062l5.75 15H52z" />
+									</g>
+								</svg></div>
+						</div>
+					</div>
+
+					<!-- slider -->
+					<section class="slider">
+						<h2 class="visually-hidden">Реклама инструмента</h2>
+						<ul class="slider-controls">
+							<li></li>
+							<li class="active"></li>
+						</ul>
+
+						<button class="prev"></button>
+						<button class="next"></button>
+
+						<ul class="slider-list">
+							<li class="slider-item slide-1">
+								<div class="text-promo-item">
+									<h3>Перфораторы</h3>
+									<p>Настоящие мужские игрушки</p>
+								</div>
+								<a class="button button-slide" href="#">Открыть каталог</a>
+							</li>
+							<li class="slider-item slide-2">
+								<div class="text-promo-item">
+									<h3>Дрели</h3>
+									<p>Соседям на радость!</p>
+								</div>
+								<a class="button button-slide" href="#">Открыть каталог</a>
+							</li>
+						</ul>
+					</section>
+					<!-- end slider -->
 				</div>
 
-				<!-- slider -->
-				<section class="slider">
-					<h2 class="visually-hidden">Реклама инструмента</h2>
-					<div class="slider-controls">
-						<i class="active"></i>
-						<i></i>
-					</div>
+			</section>
 
-					<button class="prev"></button>
-					<button class="next"></button>
+			<section class="popular-products">
+				<div class="popular-wrapper">
+					<h2>Популярные товары:</h2>
 
-					<ul class="slider-list">
-						<li class="slider-item slide-1">
-							<div class="text-promo-item">
-								<h3>Перфораторы</h3>
-								<p>Настоящие мужские игрушки</p>
-							</div>
-							<a class="button button-slide" href="#">Открыть каталог</a>
-						</li>
-						<li class="slider-item slide-2">
-							<div class="text-promo-item">
-								<h3>Дрели</h3>
-								<p>Соседям на радость!</p>
-							</div>
-							<a class="button button-slide" href="#">Открыть каталог</a>
-						</li>
-					</ul>
-				</section>
-				<!-- end slider -->
-			</div>
+					<a class="button button-popular" href="#">Все популярные товары</a>
+				</div>
 
-		</section>
+				<ul class="products-list">
+					<li class="products-item">
+						<div class="flag"><span class="visually-hidden">не новинка</span></div>
+						<div class="buttons-actions">
+							<a class="button button-buy" href="#">Купить</a>
+							<a class="button button-bookmarks" href="#">В закладки</a>
+						</div>
+						<div class="image"><img src="img/bfg-9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000"></div>
+						<h3>Перфоратор BOSCH BFG 9000</h3>
+						<p class="discount">32500 Р.</p>
+						<a class="button	button-price" href="#">25500 Р.</a>
+					</li>
 
-		<section class="popular-products">
-			<div class="popular-wrapper">
-				<h2>Популярные товары:</h2>
+					<li class="products-item">
+						<div class="flag"><span class="visually-hidden">не новинка</span></div>
+						<div class="buttons-actions">
+							<a class="button button-buy" href="#">Купить</a>
+							<a class="button button-bookmarks" href="#">В закладки</a>
+						</div>
+						<div class="image"><img src="img/bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></div>
+						<h3>Перфоратор BOSCH BFG 3000</h3>
+						<p class="discount">22500 Р.</p>
+						<a class="button	button-price" href="#">15500 Р.</a>
+					</li>
 
-				<a class="button button-popular" href="#">Все популярные товары</a>
-			</div>
+					<li class="products-item">
+						<div class="flag"><span class="visually-hidden">не новинка</span></div>
+						<div class="buttons-actions">
+							<a class="button button-buy" href="#">Купить</a>
+							<a class="button button-bookmarks" href="#">В закладки</a>
+						</div>
+						<div class="image"><img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
+						<h3>Перфоратор BOSCH BFG 6000</h3>
+						<p class="discount">30500 Р.</p>
+						<a class="button	button-price" href="#">25500 Р.</a>
+					</li>
 
-			<ul class="products-list">
-				<li class="products-item">
-					<div class="flag"><span class="visually-hidden">не новинка</span></div>
-					<div class="buttons-actions">
-						<a class="button button-buy" href="#">Купить</a>
-						<a class="button button-bookmarks" href="#">В закладки</a>
-					</div>
-					<div class="image"><img src="img/bfg-9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000"></div>
-					<h3>Перфоратор BOSCH BFG 9000</h3>
-					<p class="discount">32500 Р.</p>
-					<a class="button	button-price" href="#">25500 Р.</a>
-				</li>
+					<li class="products-item">
+						<div class="flag flag-new"><span class="visually-hidden">новинка</span></div>
+						<div class="buttons-actions">
+							<a class="button button-buy" href="#">Купить</a>
+							<a class="button button-bookmarks" href="#">В закладки</a>
+						</div>
+						<div class="image"><img src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></div>
+						<h3>Перфоратор BOSCH BFG 2000</h3>
+						<p class="discount"><span class="visually-hidden">Без цены со скидкой</span></p>
+						<a class="button	button-price" href="#">12500 Р.</a>
+					</li>
+				</ul>
+			</section>
 
-				<li class="products-item">
-					<div class="flag"><span class="visually-hidden">не новинка</span></div>
-					<div class="buttons-actions">
-						<a class="button button-buy" href="#">Купить</a>
-						<a class="button button-bookmarks" href="#">В закладки</a>
-					</div>
-					<div class="image"><img src="img/bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></div>
-					<h3>Перфоратор BOSCH BFG 3000</h3>
-					<p class="discount">22500 Р.</p>
-					<a class="button	button-price" href="#">15500 Р.</a>
-				</li>
+			<section class="popular-manufacturers">
+				<div class="popular-wrapper">
+					<h2>Популярные производители:</h2>
 
-				<li class="products-item">
-					<div class="flag"><span class="visually-hidden">не новинка</span></div>
-					<div class="buttons-actions">
-						<a class="button button-buy" href="#">Купить</a>
-						<a class="button button-bookmarks" href="#">В закладки</a>
-					</div>
-					<div class="image"><img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
-					<h3>Перфоратор BOSCH BFG 6000</h3>
-					<p class="discount">30500 Р.</p>
-					<a class="button	button-price" href="#">25500 Р.</a>
-				</li>
+					<a class="button button-popular" href="#">Все производители</a>
+				</div>
 
-				<li class="products-item">
-					<div class="flag flag-new"><span class="visually-hidden">новинка</span></div>
-					<div class="buttons-actions">
-						<a class="button button-buy" href="#">Купить</a>
-						<a class="button button-bookmarks" href="#">В закладки</a>
-					</div>
-					<div class="image"><img src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></div>
-					<h3>Перфоратор BOSCH BFG 2000</h3>
-					<p class="discount"><span class="visually-hidden">Без цены со скидкой</span></p>
-					<a class="button	button-price" href="#">12500 Р.</a>
-				</li>
-			</ul>
-		</section>
+				<div class="manufacturers-list">
+					<a href="#" class="manufacturers-item">
+						<p><img src="img/bosch.png" width="126" height="37" alt="Компания Bosh"></p>
+					</a>
 
-		<section class="popular-manufacturers">
-			<div class="popular-wrapper">
-				<h2>Популярные производители:</h2>
+					<a href="#" class="manufacturers-item">
+						<p><img src="img/Makita.png" width="123" height="40" alt="Компания Makita"></p>
+					</a>
 
-				<a class="button button-popular" href="#">Все производители</a>
-			</div>
+					<a href="#" class="manufacturers-item">
+						<p><img src="img/DeWALT.png" width="146" height="44" alt="Компания Dewalt"></p>
+					</a>
 
-			<ul class="manufacturers-list">
-				<li class="manufacturers-item">
-					<a href="#"><img src="img/bosch.png" width="126" height="37" alt="Компания Bosh"></a>
-				</li>
+					<a href="#" class="manufacturers-item">
+						<p><img src="img/interscol.png" width="200" height="88" alt="Компания Интерскол"></p>
+					</a>
 
-				<li class="manufacturers-item">
-					<a href="#"><img src="img/Makita.png" width="123" height="40" alt="Компания Makita"></a>
-				</li>
+					<a href="#" class="manufacturers-item">
+						<p><img src="img/Hitachi.png" width="169" height="31" alt="Компания Hitachi"></p>
+					</a>
 
-				<li class="manufacturers-item">
-					<a href="#"><img src="img/DeWALT.png" width="146" height="44" alt="Компания Dewalt"></a>
-				</li>
+					<a href="#" class="manufacturers-item">
+						<p><img src="img/LG.png" width="121" height="73" alt="Компания Lg"></p>
+					</a>
 
-				<li class="manufacturers-item">
-					<a href="#"><img src="img/interscol.png" width="200" height="88" alt="Компания Интерскол"></a>
-				</li>
+					<a href="#" class="manufacturers-item">
+						<p><img src="img/AEG.png" width="151" height="96" alt="Компания Aeg"></p>
+					</a>
 
-				<li class="manufacturers-item">
-					<a href="#"><img src="img/Hitachi.png" width="169" height="31" alt="Компания Hitachi"></a>
-				</li>
-
-				<li class="manufacturers-item">
-					<a href="#"><img src="img/LG.png" width="121" height="73" alt="Компания Lg"></a>
-				</li>
-
-				<li class="manufacturers-item">
-					<a href="#"><img src="img/AEG.png" width="151" height="96" alt="Компания Aeg"></a>
-				</li>
-
-				<li class="manufacturers-item">
-					<a href="#"><img src="img/Metabo.png" width="204" height="69" alt="Компания Metabo"></a>
-				</li>
-			</ul>
-		</section>
+					<a href="#" class="manufacturers-item">
+						<p><img src="img/Metabo.png" width="204" height="69" alt="Компания Metabo"></p>
+					</a>
+				</div>
+			</section>
+		</div>
 
 		<section class="services">
-			<h2>Сервисы</h2>
+			<div class="container">
+				<h2>Сервисы</h2>
 
-			<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
-				покупки приятными.</p>
-			<!-- slider -->
-			<ul class="services-option">
-				<li>Доставка</li>
-				<li>Гарантия</li>
-				<li>Кредит</li>
-			</ul>
+				<p>Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать
+					ваши
+					покупки приятными.</p>
+				<!-- slider -->
+				<div class="slider-wrapper">
+					<ul class="services-option">
+						<li class="active">Доставка</li>
+						<li >Гарантия</li>
+						<li >Кредит</li>
+					</ul>
 
-			<ul class="services-slider">
-				<li class="services-slide-1">
-					<h3>Доставка</h3>
-					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-					</p>
-				</li>
-				<li class="services-slide-2">
-					<h3>Гарантия</h3>
-					<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
-						вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите
-						как-нибудь сами.</p>
-				</li>
-				<li class="services-slide-3">
-					<h3>Кредит</h3>
-					<p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-					<a href="#" class="button button-services-slide">Отправить заявку</a>
-				</li>
-			</ul>
-			<!-- end slider -->
+					<ul class="services-list">
+						<li class="services-item services-slide-1">
+							<div class="item-descr">
+								<h3>Доставка</h3>
+								<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+								<p>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+							</div>
+							<div class="item-image"><span class="visually-hidden">Картинка автомобиля</span></div>
+						</li>
+
+						<li class="services-item services-slide-2">
+							<h3>Гарантия</h3>
+							<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
+								возгаранием,
+								вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+							<p>Дом уж восстановите
+								как-нибудь сами.</p>
+							<div class="item-image"><span class="visually-hidden">Картинка гарантии</span></div>
+						</li>
+
+						<li class="services-item services-slide-3">
+							<h3>Кредит</h3>
+							<p>Залезть в долговую яму стало проще!</p> 
+							<p>Кредитные консультанты придут вам на помощь.</p>
+							<a href="#" class="button button-services">Отправить заявку</a>
+							<div class="item-image"><span class="visually-hidden">Картинка кредит</span></div>
+						</li>
+					</ul>
+				</div>
+				<!-- end slider -->
+			</div>
 		</section>
 
-		<div class="index-column">
-			<section class="about-company">
-				<h2>Компания «Техномарт»</h2>
+		<div class="container">
+			<div class="index-column">
+				<section class="about-company">
+					<h2>Компания «Техномарт»</h2>
 
-				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-					равнодушными любителей сэкономить на гастарбайтерах.</p>
+					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+						равнодушными любителей сэкономить на гастарбайтерах.</p>
 
-				<p class="about-text-item">Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со
-					многими транспортными
-					компаниями:</p>
+					<p class="about-text-item">Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со
+						многими транспортными
+						компаниями:</p>
 
-				<ul class="about-list">
-					<li class="about-item">Деловые линии</li>
-					<li class="about-item">Автотрейдинг</li>
-					<li class="about-item">ЖелДорЭкспедиция</li>
-				</ul>
+					<ul class="about-list">
+						<li class="about-item">Деловые линии</li>
+						<li class="about-item">Автотрейдинг</li>
+						<li class="about-item">ЖелДорЭкспедиция</li>
+					</ul>
 
-				<a class="button button-about-company" href="#">Подробнее о компании</a>
-			</section>
+					<a class="button button-about-company" href="#">Подробнее о компании</a>
+				</section>
 
-			<section class="contacts">
-				<h2>Контакты</h2>
-				<p>Вы можете забрать товар сами, <br>заехав в наш офис:</p>
-				<p class="map-content">
-					<img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19">
-				</p>
-				<a class="button button-contacts" href="#">Заблудились? Напишите Нам!</a>
-			</section>
+				<section class="contacts">
+					<h2>Контакты</h2>
+					<p>Вы можете забрать товар сами, <br>заехав в наш офис:</p>
+					<p class="map-content">
+						<img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19">
+					</p>
+					<a class="button button-contacts" href="#">Заблудились? Напишите Нам!</a>
+				</section>
+			</div>
 		</div>
 	</main>
 

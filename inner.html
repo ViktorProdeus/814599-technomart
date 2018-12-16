@@ -31,7 +31,7 @@
 
 		<div class="container">
 			<div class="contacts-header">
-				<strong class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</strong>
+				<strong class="main-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</strong>
 
 				<div class="contacts-text">
 					<p class="text-phone">+7 (812) 555-05-55</p>
@@ -90,16 +90,30 @@
 				<section class="filter">
 					<h2>Фильтр:</h2>
 					<form action="https://echo.htmlacademy.ru">
-						<fieldset>
+						<fieldset class="filter-price">
 							<legend>Цена:</legend>
-							<!-- здесь будет Форма -->
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label>
+										<input name="min-price" type="text" value="0"> —
+										<input name="max-price" type="text" value="30000">
+									</label>
+								</div>
+							</div>
 						</fieldset>
 
-						<fieldset>
+						<fieldset class="filter-manufacturers">
 							<legend>Производители:</legend>
 							<p class="filter-option">
 								<input class="option-checkbox visually-hidden" type="checkbox" id="Bosh" name="Bosh" checked>
-								<label for="Bosh">Bosh
+								<label for="Bosh">Bosch
 									<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23">
 										<path d="M7.285 7.486l-2.83 2.83 7.783 7.783L26.17 4.166l-2.828-2.83L12.24 12.44zM21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3a3.01 3.01 0 0 0-3 3v17a3.01 3.01 0 0 0 3 3h17a3.01 3.01 0 0 0 3-3v-9.83l-2 2V20z" /></svg>
 								</label>
@@ -136,7 +150,8 @@
 						<fieldset>
 							<legend>Питание:</legend>
 							<p class="filter-option">
-								<input class="option-radio visually-hidden" type="radio" name="power" id="power-rechargeable" value="Аккумуляторные" checked>
+								<input class="option-radio visually-hidden" type="radio" name="power" id="power-rechargeable" value="Аккумуляторные"
+								 checked>
 								<label for="power-rechargeable">Аккумуляторные</label>
 							</p>
 							<p class="filter-option">
@@ -154,9 +169,14 @@
 						<a class="sort-product-current">По цене</a>
 						<a href="#">По типу</a>
 						<a href="#">По функционалу</a>
-
-						<a href="#" class="prew"><span class="visually-hidden">По убыванию</span></a>
-						<a href="#" class="next"><span class="visually-hidden">По возрастанию</span></a>
+					
+							<a href="#" class="sort-prew"><span class="visually-hidden">По убыванию</span><svg xmlns="http://www.w3.org/2000/svg"
+								 width="11" height="10">
+									<path d="M5.5 0L0 10h11z" fill="#231F20" /></svg></a>
+							<a href="#" class="sort-next"><span class="visually-hidden">По возрастанию</span><svg xmlns="http://www.w3.org/2000/svg"
+								 width="11" height="10">
+									<path d="M5.5 10L0 0h11" fill="#231F20" /></svg></a>
+				
 					</div>
 
 					<ul class="products-list">
@@ -271,10 +291,10 @@
 
 
 					<ul class="pagination-list">
-						<li class="pagination-item-current"><a href="#">1</a></li>
+						<li class="pagination-item current"><a href="#">1</a></li>
 						<li class="pagination-item"><a href="#">2</a></li>
 						<li class="pagination-item"><a href="#">3</a></li>
-						<li class="pagination-item"><a href="#">Следующая</a></li>
+						<li class="pagination-item next"><a href="#">Следующая</a></li>
 					</ul>
 				</section>
 			</div>
@@ -285,7 +305,8 @@
 				<h2>Пара слов о Перфораторах</h2>
 
 				<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-					бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
+					бетоне и камне.</p>
+				<p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
 					функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном
 					устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 			</div>
