@@ -1478,6 +1478,7 @@ label svg {
 	margin-bottom: 20px;
 
 	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
 }
 
 .manufacturers-item:nth-child(4n) {
