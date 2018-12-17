@@ -2215,6 +2215,10 @@ label svg {
 	border: none;
 }
 
+.button-login:hover {
+background-color: #b22832;
+}
+
 .button-close {
 	display: block;
 	position: absolute;
@@ -2226,6 +2230,7 @@ label svg {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	z-index: 100;
 }
 
 .button-close::before {
@@ -2264,9 +2269,9 @@ label svg {
 	background-color:  #ca2c37;
 }
 
-.button-close:focus::before,
-.button-close:focus::after {
-	background-color:  #ba2732;
+.button-close:active::before,
+.button-close:active::after {
+	background-color:  #ee3643;
 }
 
 .modal-map {
@@ -2288,8 +2293,6 @@ label svg {
 .modal-map iframe {
 	position: relative;
 	z-index: 2;
-
-	border: 6px solid #c5c5c5;
 }
 
 .modal-map p {
