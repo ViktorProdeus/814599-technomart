@@ -719,7 +719,7 @@ fieldset legend {
 	font-size: 0;
 }
 
-.price-controls label {
+.price-controls p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
