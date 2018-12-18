@@ -11,7 +11,7 @@ var storage = "";
 
 var mapLink = document.querySelector(".map-content");
 var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".button-close");
+var mapClose = mapPopup.querySelector(".map-close-js");
 
 
 try {
@@ -72,4 +72,45 @@ mapLink.addEventListener("click", function (evt) {
 mapClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	mapPopup.classList.remove("modal-show");
+});
+
+// slider-1
+
+var buttonNext = document.querySelector(".next");
+var buttonPrev = document.querySelector(".prev");
+var item1 = document.querySelector(".slider-list li:first-child");
+var item2 = document.querySelector(".slider-list li:last-child");
+var radio1 = document.querySelector(".slider-controls li:first-child");
+var radio2 = document.querySelector(".slider-controls li:last-child");
+
+buttonNext.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	item1.style.display = 'none';	
+	item2.style.display = 'block';	
+	radio1.classList.remove("active");
+	radio2.classList.add("active");
+});
+
+buttonPrev.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	item2.style.display = 'none';	
+	item1.style.display = 'block';
+	radio2.classList.remove("active");
+	radio1.classList.add("active");	
+});
+
+radio1.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	item2.style.display = 'none';	
+	item1.style.display = 'block';
+	radio2.classList.remove("active");
+	radio1.classList.add("active");	
+});
+
+radio2.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	item1.style.display = 'none';	
+	item2.style.display = 'block';	
+	radio1.classList.remove("active");
+	radio2.classList.add("active");
 });
