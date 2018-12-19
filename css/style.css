@@ -1179,9 +1179,6 @@ label svg {
 
 .slider-item {
 	display: none;
-}
-
-.slider-item {
 	padding: 25px;
 	padding-bottom: 22px;
 	height: 266px;
@@ -1191,13 +1188,6 @@ label svg {
 
 .slide-1 {
 	display: block;
-}
-
-.slide-2 {
-	display: none;
-}
-
-.slide-1 {
 	background-color: #dac8b5;
 	background-image: url(../img/Perforators.jpg);
 	background-position: 0 0;
@@ -1206,6 +1196,7 @@ label svg {
 }
 
 .slide-2 {
+	display: block;
 	background-color: #5c4841;
 	background-image: url(../img/Drills.jpg);
 	background-position: 0 0;

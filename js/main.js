@@ -85,32 +85,32 @@ var radio2 = document.querySelector(".slider-controls li:last-child");
 
 buttonNext.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	item1.style.display = 'none';	
-	item2.style.display = 'block';	
-	radio1.classList.remove("active");
-	radio2.classList.add("active");
+	item1.classList.toggle("slide-1");	
+	item2.classList.toggle("slide-2");	
+	radio1.classList.toggle("active");
+	radio2.classList.toggle("active");
 });
 
 buttonPrev.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	item2.style.display = 'none';	
-	item1.style.display = 'block';
-	radio2.classList.remove("active");
-	radio1.classList.add("active");	
+	item2.classList.toggle("slide-2");	
+	item1.classList.toggle("slide-1");	
+	radio2.classList.toggle("active");
+	radio1.classList.toggle("active");	
 });
 
 radio1.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	item2.style.display = 'none';	
-	item1.style.display = 'block';
+	item2.classList.remove("slide-2");	
+	item1.classList.add("slide-1");
 	radio2.classList.remove("active");
 	radio1.classList.add("active");	
 });
 
 radio2.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	item1.style.display = 'none';	
-	item2.style.display = 'block';	
+	item1.classList.remove("slide-1");	
+	item2.classList.add("slide-2");	
 	radio1.classList.remove("active");
 	radio2.classList.add("active");
 });
