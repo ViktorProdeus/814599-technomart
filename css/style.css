@@ -1364,12 +1364,12 @@ label svg {
 }
 
 .button-price {
-	width: 80px;
+	text-align: center;
+	width: 75px;
 	position: relative;
 	margin-top: auto;
 	margin-bottom: 20px;
 	padding: 10px 30px;
-
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 700;
 	font-size: 17px;
@@ -1381,8 +1381,8 @@ label svg {
 	content: "";
 	position: absolute;
 	top: 0;
-	right: -20px;
-	width: 0;
+	right: -40px;
+	width: 15px;
 	height: 1px;
 	border: 19px solid #ffffff;
 	border-left-color: #ee3643;
