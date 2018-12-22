@@ -2061,7 +2061,7 @@ label svg {
 	-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
+			-ms-flex-pack: justify;
 					justify-content: space-between;	
 
 	margin-bottom: 27px;
@@ -2080,7 +2080,6 @@ label svg {
 .site-navigation-footer {
 	margin: 0;
 	padding: 39px 0 5px;
-	width: 548px;
 
 	display: -webkit-box;
 
@@ -2099,7 +2098,7 @@ label svg {
 }
 
 .site-navigation-footer li:not(:last-child) {
-	margin-right: 59px;
+	margin-right: 60px;
 }
 
 .site-navigation-footer a {
