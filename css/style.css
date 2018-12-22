@@ -1963,8 +1963,9 @@ label svg {
 
 .button-contacts {
 	display: inline-block;
+	vertical-align: middle;
 	margin-top: 41px;
-	padding: 10px 60px 10px 63px;
+	padding: 10px 60px 10px 62px;
 }
 
 .about-tools {
