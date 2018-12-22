@@ -114,3 +114,32 @@ radio2.addEventListener("click", function (evt) {
 	radio1.classList.remove("active");
 	radio2.classList.add("active");
 });
+
+// slider-2
+
+var tab = document.querySelectorAll(".services-option li");
+var activeOption = document.querySelector(".services-option .active");
+var serviceItem = document.querySelector(".services-item");
+
+// var serviceslist = [
+//   services-slide-1,
+//   services-slide-1,
+//   services-slide-1
+// ];
+
+
+var thumbnails = document.querySelectorAll('.gallery__photo-preview');
+var fullPhoto = document.querySelector('.full-photo');
+
+var addThumbnailClickHandler = function (thumbnail, photo) {
+  thumbnail.addEventListener('click', function () {
+     fullPhoto.src = photo;
+  });
+};
+
+for (var i = 0; i < thumbnails.length; i++) {
+  addThumbnailClickHandler(thumbnails[i], photos[i]);
+}
+
+
+
