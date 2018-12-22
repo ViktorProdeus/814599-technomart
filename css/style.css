@@ -1518,7 +1518,7 @@ label svg {
 	content: "";
 	position: absolute;
 	top: 0;
-	left: 100%;
+	left: 99.9%;
 	width: 0;
 	height: 0px;
 	border: 19px solid transparent;
