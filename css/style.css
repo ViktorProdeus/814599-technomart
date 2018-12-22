@@ -552,6 +552,11 @@ img {
 	-webkit-box-pack: center;
 			-ms-flex-pack: center;
 					justify-content: center;
+	background-color: #32425c;
+	-webkit-box-shadow: 0 5px 0 0 rgba(41, 52, 73, 1);
+					box-shadow: 0 5px 0 0 rgba(41, 52, 73, 1);
+	-webkit-box-sizing: border-box;
+					box-sizing: border-box;
 }
 
 .site-navigation {
@@ -563,23 +568,21 @@ img {
 	-webkit-box-pack: center;
 			-ms-flex-pack: center;
 					justify-content: center;
-	width: 100%;
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
 
 	list-style: none;
+}
 
-	background-color: #32425c;
-	-webkit-box-shadow: 0 5px 0 0 rgba(41, 52, 73, 1);
-					box-shadow: 0 5px 0 0 rgba(41, 52, 73, 1);
-	-webkit-box-sizing: border-box;
-					box-sizing: border-box;
+.site-navigation li {
+	display: flex;
+	justify-content: center;
 }
 
 .site-navigation a {
-	display: block;
-	padding: 22px 30px 17px;
+	align-self: center;
+	padding: 22px 30px 16px;
 	color: #ffffff;
 	font-size: 17px;
 	line-height: 17px;
