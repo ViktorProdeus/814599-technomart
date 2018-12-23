@@ -1481,7 +1481,7 @@ label svg {
 }
 
 .products-item h3 {
-	min-height: 40px;
+	min-width: 160px;
 	padding: 0 30px;
 	margin-top: 8px;
 	margin-bottom: 15px;
