@@ -1212,7 +1212,7 @@ label svg {
 	margin-bottom: 0;
 }
 
-/* slider ??? */
+/* slider */
 .slider {
 	position: relative;
 	-webkit-box-ordinal-group: 2;
@@ -1242,6 +1242,7 @@ label svg {
 	position: relative;
 
 	display: inline-block;
+	vertical-align: middle;
 	width: 10px;
 	height: 10px;
 	padding: 5px;
@@ -1376,6 +1377,7 @@ label svg {
 
 .button-slide {
 	display: inline-block;
+	vertical-align: middle;
 	width: 196px;
 	padding: 10px;
 	text-align: center;
@@ -1788,6 +1790,7 @@ label svg {
 
 .services-item .button-services {
 	display: inline-block;
+	vertical-align: middle;
 	padding: 10px 40px;
 	margin-top: 26px;
 	text-align: center;
@@ -1973,6 +1976,7 @@ label svg {
 
 .button-about-company {
 	display: inline-block;
+	vertical-align: middle;
 	margin-top: 36px;
 	padding: 10px 40px;
 }
