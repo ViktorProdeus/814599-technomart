@@ -400,20 +400,21 @@ img {
 	font: inherit;
 	font-size: 21px;
 	line-height: 21px;
-	color: #000;
+	color: #000000;
 
 	background-color: #ffffff;
 }
 
-.user-navigation a:hover:not(.user-link) {
+.link-enter:hover,
+.link-registration:hover {
 	color: #ee3643;
 }
-.user-navigation a:active:not(.user-link) path {
+
+.link-enter:hover svg {
 	fill: #c5c5c5;
+	color: #c5c5c5;
 }
-.user-navigation a:active:not(.user-link) {
-	opacity: 0.3;
-	
+.user-navigation a:active {	
 	color: #c5c5c5;
 }
 
@@ -425,51 +426,59 @@ img {
 			flex-wrap: wrap;
 	width: 300px;
 }
+
 .user-login {
-	position: relative;
-}
-.user-login .user-link {
-	
+	display: flex;
 	font: inherit;
 
-	padding: 12px 69px 12px 47px;
+	padding: 14px 0 10px 0;
 	font-size: 21px;
 	line-height: 21px;
-	width: 299px;
-	white-space: nowrap;
+	width: 300px;
 	-webkit-box-sizing: border-box;
 					box-sizing: border-box;
-	margin-bottom: 5px;
+	margin-bottom: 7px;
 
 	background-color: #ffffff;
 }
 
-.user-link svg:first-of-type {
-	position: absolute;
-	top: 13px;
-	left: 13px;
-	width: 20px;
-	height: 18px;
+.user-navigation .link-login {
+	font: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-left: 13px;
+
 }
 
-.user-link svg:last-of-type {
-	position: absolute;
-	top: 14px;
-	right: 10px;
-	width: 21px;
-	height: 17px;
+.svg-user {
+	padding-right: 14px;
+}
+
+.user-login .link-logout {
+	display: flex;
+}
+
+.svg-logout {
+	padding-top: 2px;
+	padding-left: 36px;
+}
+
+
+
+.link-logout svg,
+.link-login svg {
 	fill: #c5c5c5;
 }
 
-.user-link path {
-	fill: #c5c5c5;
-}
-.user-link:hover path {
+.link-logout:hover svg,
+.link-login:hover svg {
+	color: #000000;
 	fill: #32425C;
 }
 
-.user-link:active,
-.user-link:active path {
+.link-logout:active svg,
+.link-login:active svg {
 	color: #c5c5c5;
 	fill: #c5c5c5;
 }
@@ -479,38 +488,49 @@ img {
 	background-color: transparent;
 }
 
-.inner-page .order-link,
-.inner-page .private-link {
-	margin-left: 19px;
-	margin-right: 33px;
 
+
+.inner-page .order-link,
+.inner-page .separator,
+.inner-page .private-link {
 	font-size: 16px;
 	line-height: 18px;
 	color: #32425c;
 	text-decoration: underline;
 }
-.user-navigation .order-link:active,
-.user-navigation .private-link:active {
+
+.inner-page .order-link {
+	margin-left: 19px;
+}
+.inner-page .separator {
+	margin-left: 15px;
+}
+.inner-page .private-link {
+	margin-left: 12px;
+}
+
+.inner-page .order-link:hover,
+.inner-page .private-link:hover {
+	color: #ee3643;
+}
+
+.inner-page .order-link:active,
+.inner-page .private-link:active {
 	color: #c5c5c5;
 }
 
-.inner-page .private-link {
+.inner-page .separator {
 	position: relative;
-	margin-left: 0;
-}
-
-.inner-page .private-link::before {
-	display: block;
-	position: absolute;
-	content: "";
 	width: 4px;
 	height: 4px;
 	top: 7px;
-	left: -19px;
+	left: 0;
 
 	background-color: #32425c;
 	border-radius: 50%;
 }
+
+
 
 .link-enter {
 	max-width: 120px;
@@ -528,15 +548,18 @@ img {
 	height: 17px;
 }
 
-.link-enter path {
+.link-enter svg {
 	fill: #c5c5c5;
 }
-.link-enter:hover path {
+.link-enter:hover svg {
 	fill: #32425c;
 }
+
+.link-enter:active svg,
 .link-registration:active,
 .link-enter:active {
 	color: #c5c5c5;
+	fill: #c5c5c5;
 }
 
 .link-registration {
@@ -1305,7 +1328,7 @@ label svg {
 .slide-1 {
 	display: block;
 	background-color: #dac8b5;
-	background-image: url(../img/Perforators.jpg);
+	background-image: url(../img/perforators.jpg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1314,7 +1337,7 @@ label svg {
 .slide-2 {
 	display: block;
 	background-color: #5c4841;
-	background-image: url(../img/Drills.jpg);
+	background-image: url(../img/drills.jpg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1460,7 +1483,7 @@ label svg {
 	width: 218px;
 	height: 88px;
 	padding: 40px 0;
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255, 255, 255, 1);
 	z-index: 10;
 }
 
@@ -1482,7 +1505,7 @@ label svg {
 }
 
 .products-item h3 {
-	width: 160px;
+	align-self: stretch;
 	padding: 0 30px;
 	margin-top: 8px;
 	margin-bottom: 15px;
