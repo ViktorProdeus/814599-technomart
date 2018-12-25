@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -298,11 +298,15 @@
 
 				<!-- slider -->
 				<div class="slider-wrapper">
-					<ul class="services-option">
-						<li class="active">Доставка</li>
-						<li>Гарантия</li>
-						<li>Кредит</li>
-					</ul>
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+
+					<div class="services-option">
+						<label tabindex="0" for="btn-1">Доставка</label>
+						<label tabindex="0" for="btn-2">Гарантия</label>
+						<label tabindex="0" for="btn-3">Кредит</label>
+					</div>
 
 					<ul class="services-list">
 						<li class="services-item services-slide-1">
@@ -363,7 +367,7 @@
 					<p class="contacts-text-item1">Вы можете забрать товар сами,</p>
 					<p>заехав в наш офис:</p>
 					<p class="map-content">
-						<a href="img/map-popup.jpg"><img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19"></a> 
+						<a href="img/map-popup.jpg"><img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19"></a>
 					</p>
 					<a class="button button-contacts" href="#">Заблудились? Напишите Нам!</a>
 				</section>
@@ -490,7 +494,26 @@
 		</button>
 	</section>
 
-	<script src="js/main.js"></script>
+	<section class="modal modal-in-cart">
+		<h2 class="visually-hidden">Товар в корзине</h2>
+		<div class="modal-container">
+			<p class="product-checked"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66">
+					<circle cx="33" cy="33" r="33" fill="#63A63E" />
+					<path d="M49.64 21.066c-.39-.39-1.025-.39-1.414 0l-18.44 18.438c-.39.39-1.025.39-1.414 0l-8.14-8.14c-.39-.39-1.025-.39-1.414 0L15.285 34.9c-.39.39-.39 1.025 0 1.414l13.09 13.1c.39.39 1.025.39 1.414 0l23.388-23.388c.39-.39.39-1.025 0-1.414l-3.535-3.536z"
+					 fill="#fff" /></svg>
+				Товар добавлен в корзину!
+			</p>
+		</div>
+		<div class="buttons-wrapper">
+			<div class="modal-container">
+				<a href="#" class="button button-cart">Оформить заказ</a>
+				<button class="button button-continue" type="button">Продолжить покупки</button>
+			</div>
+		</div>
+		<button type="button" class="button-in-cart button-close" aria-label="Закрыть"></button>
+	</section>
+
+	<script src="js/script.min.js"></script>
 </body>
 
 </html>
