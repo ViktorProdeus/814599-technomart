@@ -126,7 +126,7 @@ if(sliderMain) {
 	});
 }
 
-// модалка при покупке товара
+// modal-in-cart
 var productsList = document.querySelector('.products-list');
 if (productsList) {
 	var productBuyInform = function () {
@@ -154,6 +154,12 @@ if (productsList) {
 			closeCartContinue.addEventListener("click", function (evt) {
 				evt.preventDefault();
 				cartModal.classList.remove("modal-show");
+			});
+			window.addEventListener("keydown", function (evt) {
+				if (evt.keyCode === 27) {
+					evt.preventDefault();
+					cartModal.classList.remove("modal-show");
+				}
 			});
 		}		
 	};
