@@ -72,7 +72,7 @@ img {
 }
 
 .main-header {
-	padding-bottom: 64px;
+	padding-bottom: 60px;
 	margin-bottom: 59px;
 
 	background-color: #f3f7f9;
@@ -632,8 +632,7 @@ img {
 			-ms-flex-pack: center;
 					justify-content: center;
 	background-color: #32425c;
-	-webkit-box-shadow: 0 5px 0 0 rgba(41, 52, 73, 1);
-					box-shadow: 0 5px 0 0 rgba(41, 52, 73, 1);
+	border-bottom: 5px solid #293449;
 	-webkit-box-sizing: border-box;
 					box-sizing: border-box;
 }
@@ -747,7 +746,7 @@ img {
 }
 
 .breadcrumbs a:focus {
-	border-bottom: 1px dotted #c5c9d1; 
+	outline: 2px solid rgba(30, 144, 255, 0.5);
 }
 
 .page-title {
@@ -873,9 +872,16 @@ fieldset legend {
 .range-controls .toggle-min {
 	left: 20px;
 }
+.range-controls .toggle-min:focus {
+	outline: 2px solid rgba(30, 144, 255, 0.5);
+}
 
 .range-controls .toggle-max {
 	left: 160px;
+}
+.range-controls .toggle-max:focus {
+	left: 160px;
+	outline: 2px solid rgba(30, 144, 255, 0.5);
 }
 
 .price-controls {
@@ -997,24 +1003,25 @@ label svg {
 .option-radio:focus + label::before {
 	-webkit-box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 1px 2px rgba(181, 181, 181, .5);
+	0px 0px 1px 2px rgba(30, 144, 255, 0.5);
 	        box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 1px 2px rgba(181, 181, 181, .5);
+	0px 0px 1px 2px rgba(30, 144, 255, 0.5);
 }
 
 .option-checkbox:focus:checked ~ label svg {
-	stroke: rgba(181, 181, 181, .5);
-	stroke-width: 7%;
+	stroke: rgba(30, 144, 255, 0.5);
+	stroke-width: 3%;
 }
+
 
 .option-checkbox:focus + label::before {
 	-webkit-box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(181, 181, 181, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 	        box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(181, 181, 181, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 }
 
 .option-radio + label::before {
@@ -1070,23 +1077,20 @@ label svg {
 }
 
 .filter-button:hover {
-	outline: none;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
 }
 
 .filter-button:focus {
-	outline: none;
 	-webkit-box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(181, 181, 181, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 	        box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(181, 181, 181, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 }
 
 .filter-button:active {
-	outline: none;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
 }
@@ -1421,10 +1425,10 @@ label svg {
 .slider .next:focus {
 	-webkit-box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(181, 181, 181, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 	        box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(181, 181, 181, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 }
 
 .slider .prev {
@@ -1878,6 +1882,17 @@ label svg {
 	background-color: #ffffff;
 }
 
+#btn-1:checked ~ .services-option label[for="btn-1"]:focus,
+#btn-2:checked ~ .services-option label[for="btn-2"]:focus,
+#btn-3:checked ~ .services-option label[for="btn-3"]:focus {
+	-webkit-box-shadow:
+	0 0 0 0 transparent,
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
+	        box-shadow:
+	0 0 0 0 transparent,
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
+}
+
 .services-option {
 	position: relative;
 	display: block;
@@ -2145,10 +2160,10 @@ label svg {
 	height: 158px;
 	-webkit-box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(181, 181, 181, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 	        box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(181, 181, 181, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 }
 
 .button-contacts {
@@ -2222,9 +2237,17 @@ label svg {
 
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item a:hover {
 	border: 1px solid #bdc6ca;
+}
+
+.pagination-item a:focus {
+	-webkit-box-shadow:
+	0 0 0 0 transparent,
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
+	        box-shadow:
+	0 0 0 0 transparent,
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 }
 
 .pagination-item a:active {
@@ -2242,10 +2265,10 @@ label svg {
 .pagination-item-current a:focus {
 	-webkit-box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(238, 54, 67, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 	        box-shadow:
 	0 0 0 0 transparent,
-	0px 0px 0px 2px rgba(238, 54, 67, .5);
+	0px 0px 0px 2px rgba(30, 144, 255, 0.5);
 }
 
 .main-footer {
