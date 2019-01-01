@@ -1,19 +1,19 @@
-var link = document.querySelector('.button-contacts');
-var popup = document.querySelector('.modal-login');
+var link = document.querySelector(".button-contacts");
+var popup = document.querySelector(".modal-login");
 
-if(popup){	
+if (popup) {
 	var close = popup.querySelector(".button-close");
 	var form = popup.querySelector("form");
 	var login = popup.querySelector("[name=user-name]");
 	var mail = popup.querySelector("[name=user-mail]");
-	
-	close.addEventListener("click", function (evt) {
+
+	close.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		popup.classList.remove("modal-show");
-		popup.classList.remove("modal-error");	
+		popup.classList.remove("modal-error");
 	});
-	
-	form.addEventListener("submit", function (evt) {
+
+	form.addEventListener("submit", function(evt) {
 		if (!login.value || !mail.value) {
 			evt.preventDefault();
 			popup.classList.remove("modal-error"); // добавили хак
@@ -26,9 +26,9 @@ if(popup){
 			}
 		}
 	});
-	
-	if(link){	
-		link.addEventListener("click", function (evt) {
+
+	if (link) {
+		link.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			popup.classList.add("modal-show");
 			if (storage) {
@@ -46,19 +46,19 @@ var storage = "";
 
 var mapPopup = document.querySelector(".modal-map");
 
-if(mapPopup){	
+if (mapPopup) {
 	var mapClose = mapPopup.querySelector(".map-close-js");
 }
 
 var mapLink = document.querySelector(".map-content");
 
-if(mapLink){
-	mapLink.addEventListener("click", function (evt) {
+if (mapLink) {
+	mapLink.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		mapPopup.classList.add("modal-show");
 	});
 
-	mapClose.addEventListener("click", function (evt) {
+	mapClose.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		mapPopup.classList.remove("modal-show");
 	});
@@ -70,7 +70,7 @@ try {
 	isStorageSupport = false;
 }
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
 	if (evt.keyCode === 27) {
 		evt.preventDefault();
 		if (popup.classList.contains("modal-show")) {
@@ -85,7 +85,7 @@ window.addEventListener("keydown", function (evt) {
 
 // slider-1
 var sliderMain = document.querySelector(".slider");
-if(sliderMain) {
+if (sliderMain) {
 	var buttonNext = sliderMain.querySelector(".next");
 	var buttonPrev = sliderMain.querySelector(".prev");
 	var item1 = sliderMain.querySelector(".slider-list li:first-child");
@@ -93,76 +93,77 @@ if(sliderMain) {
 	var radio1 = sliderMain.querySelector(".slider-controls li:first-child");
 	var radio2 = sliderMain.querySelector(".slider-controls li:last-child");
 
-	buttonNext.addEventListener("click", function (evt) {
+	buttonNext.addEventListener("click", function(evt) {
 		evt.preventDefault();
-		item1.classList.toggle("slide-1");	
-		item2.classList.toggle("slide-2");	
+		item1.classList.toggle("slide-1");
+		item2.classList.toggle("slide-2");
 		radio1.classList.toggle("active");
 		radio2.classList.toggle("active");
 	});
 
-	buttonPrev.addEventListener("click", function (evt) {
+	buttonPrev.addEventListener("click", function(evt) {
 		evt.preventDefault();
-		item2.classList.toggle("slide-2");	
-		item1.classList.toggle("slide-1");	
+		item2.classList.toggle("slide-2");
+		item1.classList.toggle("slide-1");
 		radio2.classList.toggle("active");
-		radio1.classList.toggle("active");	
+		radio1.classList.toggle("active");
 	});
 
-	radio1.addEventListener("click", function (evt) {
+	radio1.addEventListener("click", function(evt) {
 		evt.preventDefault();
-		item2.classList.remove("slide-2");	
+		item2.classList.remove("slide-2");
 		item1.classList.add("slide-1");
 		radio2.classList.remove("active");
-		radio1.classList.add("active");	
+		radio1.classList.add("active");
 	});
 
-	radio2.addEventListener("click", function (evt) {
+	radio2.addEventListener("click", function(evt) {
 		evt.preventDefault();
-		item1.classList.remove("slide-1");	
-		item2.classList.add("slide-2");	
+		item1.classList.remove("slide-1");
+		item2.classList.add("slide-2");
 		radio1.classList.remove("active");
 		radio2.classList.add("active");
 	});
 }
 
 // modal-in-cart
-var productsList = document.querySelector('.products-list');
+var productsList = document.querySelector(".products-list");
 if (productsList) {
-	var productBuyInform = function () {
-		var elements = productsList.querySelectorAll('.products-item');
-		var cartModal = document.querySelector('.modal-in-cart');
+	var productBuyInform = function() {
+		var elements = productsList.querySelectorAll(".products-item");
+		var cartModal = document.querySelector(".modal-in-cart");
+
 		if (cartModal) {
 			var closeCartModal = cartModal.querySelector(".button-close");
 			var closeCartContinue = cartModal.querySelector(".button-continue");
-			
+
 			for (var i = 0; i < elements.length; i++) {
-				var element = elements[i]; 
-				var child = element.querySelector('.button-buy');
-				
-				child.addEventListener('click', function(evt) {
+				var element = elements[i];
+				var child = element.querySelector(".button-buy");
+
+				child.addEventListener("click", function(evt) {
 					evt.preventDefault();
-					cartModal.classList.add('modal-show');
+					cartModal.classList.add("modal-show");
 				});
 			}
-			
-			closeCartModal.addEventListener("click", function (evt) {
+
+			closeCartModal.addEventListener("click", function(evt) {
 				evt.preventDefault();
 				cartModal.classList.remove("modal-show");
 			});
 
-			closeCartContinue.addEventListener("click", function (evt) {
+			closeCartContinue.addEventListener("click", function(evt) {
 				evt.preventDefault();
 				cartModal.classList.remove("modal-show");
 			});
-			window.addEventListener("keydown", function (evt) {
+
+			window.addEventListener("keydown", function(evt) {
 				if (evt.keyCode === 27) {
 					evt.preventDefault();
 					cartModal.classList.remove("modal-show");
 				}
 			});
-		}		
+		}
 	};
 	productBuyInform();
 }
-

@@ -1,519 +1,635 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta content="telephone=no" name="format-detection">
+		<title>
+			HTML Academy: Техномарт
+		</title>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="search-navigation">
+				<div class="container">
+					<a class="button logo header-logo">Техномарт</a>
+					<form action="https://echo.htmlacademy.ru" class="header-search" method="get">
+						<input class="search-input" id="search" name="search" placeholder="Поиск:" type="search"> <label for="search"><span class="visually-hidden">иконка поиска</span></label>
+					</form>
+					<a class="site-bookmarks" href="#">Закладки: <span>0</span></a> <a class="site-cart" href="#">Корзина: <span>0</span></a> <a class="button-order" href="#">Оформить заказ</a>
+				</div>
+			</div>
 
-<head>
-	<meta charset="utf-8">
-	<title>HTML Academy: Техномарт</title>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-
-	<header class="main-header">
-		<div class="search-navigation">
 			<div class="container">
-				<a class="button logo header-logo">Техномарт</a>
-				<form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-					<input type="search" id="search" name="search" placeholder="Поиск:">
-					<label for="search">
-						<span class="visually-hidden">иконка поиска</span>
-					</label>
-				</form>
-				<a href="#" class="site-bookmarks">Закладки: <span>0</span></a>
-				<a href="#" class="site-cart">Корзина: <span>0</span></a>
-				<a class="button-order" href="#">Оформить заказ</a>
-			</div>
-		</div>
+				<div class="contacts-header">
+					<div class="title-wrapper">
+						<h1 class="main-title">
+							Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
+						</h1>
+					</div>
 
-		<div class="container">
+					<div class="contacts-text">
+						<p class="text-phone">
+							+7 (812) 555-05-55
+						</p>
 
-			<div class="contacts-header">
-				<div class="title-wrapper">
-					<h1 class="main-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
+						<p class="text-adress">
+							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+						</p>
+					</div>
+
+					<ul class="user-navigation">
+						<li>
+							<a class="link-enter" href="#"><svg fill="#32425C" height="17" width="20" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.875 8.5L6 0v6H0v5h6v6zm2.11 6.5H11.96v2h5.027c2.178 0 3.004-1.8 3.03-3.026V3.028C20 1.8 19.164 0 16.986 0H11.96v2h5.027c.84 0 .992.68 1 1.057V13.95c-.017.376-.17 1.06-1 1.06z"></path></svg> Войти</a>
+						</li>
+
+						<li>
+							<a class="link-registration" href="#">Регистрация</a>
+						</li>
+					</ul>
 				</div>
-				<div class="contacts-text">
-					<p class="text-phone">+7 (812) 555-05-55</p>
-					<p class="text-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				</div>
 
-				<ul class="user-navigation">
-					<li>
-						<a class="link-enter" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="#32425C">
-								<path d="M14.875 8.5L6 0v6H0v5h6v6zm2.11 6.5H11.96v2h5.027c2.178 0 3.004-1.8 3.03-3.026V3.028C20 1.8 19.164 0 16.986 0H11.96v2h5.027c.84 0 .992.68 1 1.057V13.95c-.017.376-.17 1.06-1 1.06z" /></svg>
-							Войти</a>
-					</li>
-					<li>
-						<a class="link-registration" href="#">Регистрация</a>
-					</li>
-				</ul>
+				<nav class="main-navigation">
+					<ul class="site-navigation">
+						<li>
+							<a class="site-navigation-current">Главная</a>
+						</li>
+
+						<li>
+							<a href="#">Компания</a>
+						</li>
+
+						<li>
+							<a href="inner.html">Каталог</a>
+						</li>
+
+						<li>
+							<a href="#">Новости</a>
+						</li>
+
+						<li>
+							<a href="#">Спецпредложения</a>
+						</li>
+
+						<li>
+							<a href="#">Доставка</a>
+						</li>
+
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
+		</header>
 
-			<nav class="main-navigation">
-				<ul class="site-navigation">
-					<li><a class="site-navigation-current">Главная</a></li>
-					<li><a href="#">Компания</a></li>
-					<li><a href="inner.html">Каталог</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Спецпредложения</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+		<main>
+			<div class="container">
+				<section class="promo">
+					<h2 class="visually-hidden">
+						Рекламный блок
+					</h2>
 
-	<main>
-		<div class="container">
-			<section class="promo">
-				<h2 class="visually-hidden">Рекламный блок</h2>
+					<div class="promo-adventages">
+						<div class="promo-items-column">
+							<div class="promo-item promo-stock promo-item-new">
+								<p class="promo-description">
+									<b>Материалы</b> <a class="button button-promo" href="#">На любой вкус</a>
+								</p>
 
-				<div class="promo-adventages">
+								<div class="promo-image">
+									<svg height="65" width="44" xmlns="http://www.w3.org/2000/svg">
+									<path d="M37.9 30.438v10.87s.105 2.735-2.825 2.735c-3.07 0-3.125-2.735-3.125-2.735V34.9c0-.24-.336-1.9-2.32-1.9-2.625 0-2.67 1.877-2.67 1.877v19.22s.03 1.863-2.464 1.863S22 53.96 22 53.96V40.016s0-2.945-3.805-2.945c-4.054 0-3.967 3.125-3.967 3.125v3.728s-.12 2.945-4.688 2.945-4.628-4.5-4.628-4.5v-12.42C3.168 28.976 0 26.67 0 26.67v29.332S2.988 65 22 65s22-8.695 22-8.695V26.67c-2.938 2.83-6.1 3.767-6.1 3.767zM22 0C1.688 0 0 19.875 0 19.875v3.062C8.438 29.188 22 29 22 29s13.562.188 22-6.062v-3.062C44 19.875 42.312 0 22 0zm0 25c-11.75 0-14.312-2.375-14.312-2.375C13.938 19.75 22 19.875 22 19.875s8.062-.125 14.312 2.75c0 0-2.562 2.375-14.312 2.375zm0-12.375c-9.562 0-17.688 2.938-17.688 2.938C8.875 2.625 22 3.062 22 3.062s13.125-.438 17.688 12.5c0 0-8.126-2.937-17.688-2.937z" fill="#fff"></path></svg>
+								</div>
+							</div>
 
-					<div class="promo-item promo-stock">
-						<div class="flag flag-new"><span class="visually-hidden">новинка</span></div>
-						<p class="promo-description">
-							<b>Материалы</b>
-							<a href="#" class="button button-promo">На любой вкус</a>
-						</p>
-						<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="65">
-								<path d="M37.9 30.438v10.87s.105 2.735-2.825 2.735c-3.07 0-3.125-2.735-3.125-2.735V34.9c0-.24-.336-1.9-2.32-1.9-2.625 0-2.67 1.877-2.67 1.877v19.22s.03 1.863-2.464 1.863S22 53.96 22 53.96V40.016s0-2.945-3.805-2.945c-4.054 0-3.967 3.125-3.967 3.125v3.728s-.12 2.945-4.688 2.945-4.628-4.5-4.628-4.5v-12.42C3.168 28.976 0 26.67 0 26.67v29.332S2.988 65 22 65s22-8.695 22-8.695V26.67c-2.938 2.83-6.1 3.767-6.1 3.767zM22 0C1.688 0 0 19.875 0 19.875v3.062C8.438 29.188 22 29 22 29s13.562.188 22-6.062v-3.062C44 19.875 42.312 0 22 0zm0 25c-11.75 0-14.312-2.375-14.312-2.375C13.938 19.75 22 19.875 22 19.875s8.062-.125 14.312 2.75c0 0-2.562 2.375-14.312 2.375zm0-12.375c-9.562 0-17.688 2.938-17.688 2.938C8.875 2.625 22 3.062 22 3.062s13.125-.438 17.688 12.5c0 0-8.126-2.937-17.688-2.937z"
-								 fill="#fff" /></svg></div>
-					</div>
+							<div class="promo-item promo-tool">
+								<p class="promo-description">
+									<b>Инструмент</b> <a class="button button-promo" href="#">На все случаи</a>
+								</p>
 
-					<div class="promo-item promo-tool">
-						<div class="flag"><span class="visually-hidden">не новинка</span></div>
-						<p class="promo-description">
-							<b>Инструмент</b>
-							<a href="#" class="button button-promo">На все случаи</a>
-						</p>
-						<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="75" height="61">
-								<path d="M5.04 58.95S5.04 61 6.907 61h27.02s2-.184 2-1.984V47.942H5.04V58.95zM73.875 8.016H60.387c-.62-2.287-2.07-3.9-3.762-3.9h-7.542v12.75h7.542c1.7 0 3.14-1.604 3.762-3.9h13.488c.575 0 1.042-1.112 1.042-2.484s-.467-2.484-1.042-2.484zM2.103 0C.167 0 0 2.04 0 2.04v15.812c0 2.936 2.903 3.002 2.903 3.002H11.9c1.935 0 1.6 1.334 1.6 1.334L10.776 37.4c-.267 2.203-1.868 3.604-1.868 3.604l-3.002 1.668c-.867.467-.867 2.2-.867 2.2h30.9v-.734c0-1.467-6.472-3.135-9.073-3.402s-2.068-2.002-2.068-2.002l1.067-7.805h3.002L30 23.057h-3.002l.33-2.737 8.6-.13c5.805-.6 10.008-4.07 10.008-4.07v-12C41.333.84 33.993 0 33.993 0h-31.9zM36 4.938v.03c0 .55-.45 1-1 1H5.03c-.55 0-1-.45-1-1v-.03c0-.55.45-1 1-1H35c.55 0 1 .45 1 1z"
-								 fill="#fff" /></svg></div>
-					</div>
+								<div class="promo-image">
+									<svg height="61" width="75" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.04 58.95S5.04 61 6.907 61h27.02s2-.184 2-1.984V47.942H5.04V58.95zM73.875 8.016H60.387c-.62-2.287-2.07-3.9-3.762-3.9h-7.542v12.75h7.542c1.7 0 3.14-1.604 3.762-3.9h13.488c.575 0 1.042-1.112 1.042-2.484s-.467-2.484-1.042-2.484zM2.103 0C.167 0 0 2.04 0 2.04v15.812c0 2.936 2.903 3.002 2.903 3.002H11.9c1.935 0 1.6 1.334 1.6 1.334L10.776 37.4c-.267 2.203-1.868 3.604-1.868 3.604l-3.002 1.668c-.867.467-.867 2.2-.867 2.2h30.9v-.734c0-1.467-6.472-3.135-9.073-3.402s-2.068-2.002-2.068-2.002l1.067-7.805h3.002L30 23.057h-3.002l.33-2.737 8.6-.13c5.805-.6 10.008-4.07 10.008-4.07v-12C41.333.84 33.993 0 33.993 0h-31.9zM36 4.938v.03c0 .55-.45 1-1 1H5.03c-.55 0-1-.45-1-1v-.03c0-.55.45-1 1-1H35c.55 0 1 .45 1 1z" fill="#fff"></path></svg>
+								</div>
+							</div>
 
-					<div class="promo-item promo-technics">
-						<div class="flag"><span class="visually-hidden">не новинка</span></div>
-						<p class="promo-description">
-							<b>Техника</b>
-							<a href="#" class="button button-promo">Для стройки</a>
-						</p>
-						<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="78" height="62">
-								<path d="M16.125 29.75A16.13 16.13 0 0 0 0 45.875 16.13 16.13 0 0 0 16.125 62 16.13 16.13 0 0 0 32.25 45.875c.001-8.907-7.22-16.126-16.125-16.126zm0 23.433a7.31 7.31 0 0 1-7.307-7.307 7.31 7.31 0 0 1 7.307-7.308 7.31 7.31 0 0 1 7.307 7.308 7.31 7.31 0 0 1-7.307 7.307zm44.73-7.3c-4.453 0-8.062 3.6-8.062 8.062A8.06 8.06 0 0 0 60.854 62c4.454 0 8.062-3.6 8.062-8.063s-3.608-8.062-8.062-8.062zm0 13.126c-2.796 0-5.062-2.268-5.062-5.063s2.267-5.062 5.062-5.062 5.062 2.268 5.062 5.062S63.65 59 60.854 59zm17.043-9.272l-2.46-18.414c-.547-4.14-3.625-4.688-3.625-4.688L66 25.946V14h-3v5.833h-4v5.295L47.188 23.75 36.626 1.875C35.814.062 33.5 0 33.5 0S11.125 2.375 8.75 3 5.312 6.167 5.312 6.167C3.004 12.537 3 23.463 3.046 26.422a23.33 23.33 0 0 1 13.08-3.986c12.944 0 23.438 10.493 23.438 23.44a23.43 23.43 0 0 1-1.064 7h10.164c.4-6.402 5.7-11.48 12.2-11.48s11.802 5.077 12.2 11.48H75c3.64 0 2.898-3.148 2.898-3.148zM23.083 19.833h-6.958V6.167h6.958v13.666zm10 0h-6.958V6.167h6.958v13.666zM53.016 36H49v-7h4.016v7zm7 0H56v-7h4.016v7zm7 0H63v-7h4.016v7z"
-								 fill="#fff" /></svg></div>
-					</div>
-					<div class="promo-wrapper">
-						<div class="promo-item promo-discount">
-							<div class="flag"><span class="visually-hidden">не новинка</span></div>
-							<p class="promo-description">
-								<b>Скидки 50%</b>
-								<a href="#" class="button button-promo">На 350 Товаров</a>
-							</p>
-							<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" width="59" height="72">
-									<g fill="#fff">
-										<path d="M58.34 20.545c-.566-.753-1.454-1.195-2.396-1.195h-38.67L14.8 11.965H3.058a3 3 0 1 0 0 6h7.424l13.5 40.285h25.16a3 3 0 1 0 0-6H28.3l-1.726-5.15h23.12a3 3 0 0 0 2.884-2.172l6.25-21.75c.26-.906.08-1.88-.487-2.634zm-7.78 9.68h-4.8V25.35h6.21l-1.4 4.876zm-17.617 0V25.35h6.807v4.875h-6.807zm6.807 6V41.1h-6.807v-4.875h6.807zM26.942 25.35v4.875H20.92l-1.634-4.875h7.657zM22.93 36.226h4.013V41.1h-2.38l-1.634-4.875zM45.75 41.1v-4.875h3.086l-1.4 4.875H45.75z" />
-										<circle cx="27.406" cy="66.094" r="5.781" />
-										<circle cx="44.844" cy="66.094" r="5.781" />
-										<path d="M29.335 9.7l7.547 5.492c.914.665 2.174.44 2.818-.494s.43-2.232-.48-2.895l-2.373-1.726 9.436-5.1L50.91 17h4.347L49.214 1.31A2.05 2.05 0 0 0 48.037.126a1.97 1.97 0 0 0-1.643.109L33.146 7.382l-3.022-2.2c-.872-.634-2.07-.462-2.742.4L18.9 16.37c-.17.18-.305.395-.405.628h5.106l5.733-7.3z" />
-									</g>
-								</svg></div>
+							<div class="promo-item promo-technics">
+								<p class="promo-description">
+									<b>Техника</b> <a class="button button-promo" href="#">Для стройки</a>
+								</p>
+
+								<div class="promo-image">
+									<svg height="62" width="78" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.125 29.75A16.13 16.13 0 0 0 0 45.875 16.13 16.13 0 0 0 16.125 62 16.13 16.13 0 0 0 32.25 45.875c.001-8.907-7.22-16.126-16.125-16.126zm0 23.433a7.31 7.31 0 0 1-7.307-7.307 7.31 7.31 0 0 1 7.307-7.308 7.31 7.31 0 0 1 7.307 7.308 7.31 7.31 0 0 1-7.307 7.307zm44.73-7.3c-4.453 0-8.062 3.6-8.062 8.062A8.06 8.06 0 0 0 60.854 62c4.454 0 8.062-3.6 8.062-8.063s-3.608-8.062-8.062-8.062zm0 13.126c-2.796 0-5.062-2.268-5.062-5.063s2.267-5.062 5.062-5.062 5.062 2.268 5.062 5.062S63.65 59 60.854 59zm17.043-9.272l-2.46-18.414c-.547-4.14-3.625-4.688-3.625-4.688L66 25.946V14h-3v5.833h-4v5.295L47.188 23.75 36.626 1.875C35.814.062 33.5 0 33.5 0S11.125 2.375 8.75 3 5.312 6.167 5.312 6.167C3.004 12.537 3 23.463 3.046 26.422a23.33 23.33 0 0 1 13.08-3.986c12.944 0 23.438 10.493 23.438 23.44a23.43 23.43 0 0 1-1.064 7h10.164c.4-6.402 5.7-11.48 12.2-11.48s11.802 5.077 12.2 11.48H75c3.64 0 2.898-3.148 2.898-3.148zM23.083 19.833h-6.958V6.167h6.958v13.666zm10 0h-6.958V6.167h6.958v13.666zM53.016 36H49v-7h4.016v7zm7 0H56v-7h4.016v7zm7 0H63v-7h4.016v7z" fill="#fff"></path></svg>
+								</div>
+							</div>
 						</div>
 
-						<div class="promo-item promo-delivery">
-							<div class="flag"><span class="visually-hidden">не новинка</span></div>
-							<p class="promo-description">
-								<b>Доставка</b>
-								<a href="#" class="button button-promo">Бесплатно</a>
-							</p>
-							<div class="promo-image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-								 width="78" height="63">
-									<g fill="#fff">
-										<circle cx="25.983" cy="55.5" r="7.5" />
-										<circle cx="59.982" cy="55.5" r="7.5" />
-										<path d="M64 0H11.062c-3.188 0-3 3.125-3 3.125V8H3.47A3.47 3.47 0 0 0 0 11.469a3.47 3.47 0 0 0 3.469 3.469l28.085 1.84.196.043c-.76 3.197-8.938 3.805-8.938 3.805l-8.3.428H5.446c-1.864 0-3.375 1.51-3.375 3.375s1.51 3.375 3.375 3.375l23.656 1.254c-.807 3.153-6.3 3.756-6.3 3.756l-14.75.76V49.19c0 3.188 2.564 3.812 2.564 3.812h2.1c1.173-6.26 6.66-11 13.26-11s12.085 4.74 13.26 11h7.404c1.174-6.26 6.66-11 13.26-11s12.086 4.74 13.26 11h1.71C77.812 53 78 48.938 78 48.938v-15.25C78 14.812 64 0 64 0zM52 23.938v-15h10.062l5.75 15H52z" />
-									</g>
-								</svg></div>
+						<div class="promo-items-column">
+							<div class="promo-wrapper">
+								<div class="promo-item promo-discount">
+									<p class="promo-description">
+										<b>Скидки 50%</b> <a class="button button-promo" href="#">На 350 Товаров</a>
+									</p>
+
+									<div class="promo-image">
+										<svg height="72" width="59" xmlns="http://www.w3.org/2000/svg">
+										<g fill="#fff">
+											<path d="M58.34 20.545c-.566-.753-1.454-1.195-2.396-1.195h-38.67L14.8 11.965H3.058a3 3 0 1 0 0 6h7.424l13.5 40.285h25.16a3 3 0 1 0 0-6H28.3l-1.726-5.15h23.12a3 3 0 0 0 2.884-2.172l6.25-21.75c.26-.906.08-1.88-.487-2.634zm-7.78 9.68h-4.8V25.35h6.21l-1.4 4.876zm-17.617 0V25.35h6.807v4.875h-6.807zm6.807 6V41.1h-6.807v-4.875h6.807zM26.942 25.35v4.875H20.92l-1.634-4.875h7.657zM22.93 36.226h4.013V41.1h-2.38l-1.634-4.875zM45.75 41.1v-4.875h3.086l-1.4 4.875H45.75z"></path>
+											<circle cx="27.406" cy="66.094" r="5.781"></circle>
+											<circle cx="44.844" cy="66.094" r="5.781"></circle>
+											<path d="M29.335 9.7l7.547 5.492c.914.665 2.174.44 2.818-.494s.43-2.232-.48-2.895l-2.373-1.726 9.436-5.1L50.91 17h4.347L49.214 1.31A2.05 2.05 0 0 0 48.037.126a1.97 1.97 0 0 0-1.643.109L33.146 7.382l-3.022-2.2c-.872-.634-2.07-.462-2.742.4L18.9 16.37c-.17.18-.305.395-.405.628h5.106l5.733-7.3z"></path>
+										</g></svg>
+									</div>
+								</div>
+
+								<div class="promo-item promo-delivery">
+									<p class="promo-description">
+										<b>Доставка</b> <a class="button button-promo" href="#">Бесплатно</a>
+									</p>
+
+									<div class="promo-image">
+										<svg height="63" width="78" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g fill="#fff">
+											<circle cx="25.983" cy="55.5" r="7.5"></circle>
+											<circle cx="59.982" cy="55.5" r="7.5"></circle>
+											<path d="M64 0H11.062c-3.188 0-3 3.125-3 3.125V8H3.47A3.47 3.47 0 0 0 0 11.469a3.47 3.47 0 0 0 3.469 3.469l28.085 1.84.196.043c-.76 3.197-8.938 3.805-8.938 3.805l-8.3.428H5.446c-1.864 0-3.375 1.51-3.375 3.375s1.51 3.375 3.375 3.375l23.656 1.254c-.807 3.153-6.3 3.756-6.3 3.756l-14.75.76V49.19c0 3.188 2.564 3.812 2.564 3.812h2.1c1.173-6.26 6.66-11 13.26-11s12.085 4.74 13.26 11h7.404c1.174-6.26 6.66-11 13.26-11s12.086 4.74 13.26 11h1.71C77.812 53 78 48.938 78 48.938v-15.25C78 14.812 64 0 64 0zM52 23.938v-15h10.062l5.75 15H52z"></path>
+										</g></svg>
+									</div>
+								</div>
+							</div>
+							<!-- slider -->
+
+							<section class="slider">
+								<h2 class="visually-hidden">
+									Реклама инструмента
+								</h2>
+
+								<ul class="slider-controls">
+									<li class="active">
+										<span class="visually-hidden">левый переключатель слайдера</span>
+									</li>
+
+									<li>
+										<span class="visually-hidden">правый переключатель слайдера</span>
+									</li>
+								</ul>
+								<button class="prev"><span class="visually-hidden">предыдущая кнопка слайдера</span></button> <button class="next"><span class="visually-hidden">следующая кнопка слайдера</span></button>
+								<ul class="slider-list">
+									<li class="slider-item slide-1">
+										<div class="text-promo-item">
+											<h3>
+												Перфораторы
+											</h3>
+
+											<p>
+												Настоящие мужские игрушки
+											</p>
+										</div>
+										<a class="button button-slide" href="inner.html">Открыть каталог</a>
+									</li>
+
+									<li class="slider-item">
+										<div class="text-promo-item">
+											<h3>
+												Дрели
+											</h3>
+
+											<p>
+												Соседям на радость!
+											</p>
+										</div>
+										<a class="button button-slide" href="inner.html">Открыть каталог</a>
+									</li>
+								</ul>
+							</section>
+							<!-- end slider -->
 						</div>
 					</div>
+				</section>
 
+				<section class="popular-products">
+					<div class="popular-wrapper">
+						<h2>
+							Популярные товары:
+						</h2>
+						<a class="button button-popular" href="#">Все популярные товары</a>
+					</div>
+
+					<ul class="products-list">
+						<li class="products-item">
+							<div class="buttons-actions">
+								<a class="button button-buy" href="#"><svg class="icon-cart" fill="#ffffff" height="15" width="15" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="4.5" cy="13.5" r="1.5"></circle>
+								<circle cx="12.5" cy="13.5" r="1.5"></circle>
+								<path d="M15 2H4.07l-.422-2H0v2h2.03l1.985 9H15V9H9.44L15 6.95z"></path></svg>Купить</a> <a class="button button-bookmarks" href="#">В закладки</a>
+							</div>
+
+							<div class="image">
+								<img alt="Перфоратор BOSCH BFG 9000" height="164" src="img/bfg-9000.png" width="184">
+							</div>
+
+							<h3>
+								Перфоратор BOSCH BFG 9000
+							</h3>
+
+							<p class="discount">
+								32500 Р.
+							</p>
+							<a class="button button-price" href="#">25500 Р.</a>
+						</li>
+
+						<li class="products-item">
+							<div class="buttons-actions">
+								<a class="button button-buy" href="#"><svg class="icon-cart" fill="#ffffff" height="15" width="15" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="4.5" cy="13.5" r="1.5"></circle>
+								<circle cx="12.5" cy="13.5" r="1.5"></circle>
+								<path d="M15 2H4.07l-.422-2H0v2h2.03l1.985 9H15V9H9.44L15 6.95z"></path></svg>Купить</a> <a class="button button-bookmarks" href="#">В закладки</a>
+							</div>
+
+							<div class="image">
+								<img alt="Перфоратор BOSCH BFG 3000" height="112" src="img/bfg-3000.png" width="127">
+							</div>
+
+							<h3>
+								Перфоратор BOSCH BFG 3000
+							</h3>
+
+							<p class="discount">
+								22500 Р.
+							</p>
+							<a class="button button-price" href="#">15500 Р.</a>
+						</li>
+
+						<li class="products-item">
+							<div class="buttons-actions">
+								<a class="button button-buy" href="#"><svg class="icon-cart" fill="#ffffff" height="15" width="15" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="4.5" cy="13.5" r="1.5"></circle>
+								<circle cx="12.5" cy="13.5" r="1.5"></circle>
+								<path d="M15 2H4.07l-.422-2H0v2h2.03l1.985 9H15V9H9.44L15 6.95z"></path></svg>Купить</a> <a class="button button-bookmarks" href="#">В закладки</a>
+							</div>
+
+							<div class="image">
+								<img alt="Перфоратор BOSCH BFG 6000" height="128" src="img/bfg-6000.png" width="144">
+							</div>
+
+							<h3>
+								Перфоратор BOSCH BFG 6000
+							</h3>
+
+							<p class="discount">
+								30500 Р.
+							</p>
+							<a class="button button-price" href="#">25500 Р.</a>
+						</li>
+
+						<li class="products-item products-item-new">
+							<div class="buttons-actions">
+								<a class="button button-buy" href="#"><svg class="icon-cart" fill="#ffffff" height="15" width="15" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="4.5" cy="13.5" r="1.5"></circle>
+								<circle cx="12.5" cy="13.5" r="1.5"></circle>
+								<path d="M15 2H4.07l-.422-2H0v2h2.03l1.985 9H15V9H9.44L15 6.95z"></path></svg>Купить</a> <a class="button button-bookmarks" href="#">В закладки</a>
+							</div>
+
+							<div class="image">
+								<img alt="Перфоратор BOSCH BFG 2000" height="112" src="img/bfg-2000.png" width="127">
+							</div>
+
+							<h3>
+								Перфоратор BOSCH BFG 2000
+							</h3>
+
+							<p class="discount">
+								<span class="visually-hidden">Без цены со скидкой</span>
+							</p>
+							<a class="button button-price" href="#">12500 Р.</a>
+						</li>
+					</ul>
+				</section>
+
+				<section class="popular-manufacturers">
+					<div class="popular-wrapper">
+						<h2>
+							Популярные производители:
+						</h2>
+						<a class="button button-popular" href="#">Все производители</a>
+					</div>
+
+					<div class="manufacturers-list">
+						<a class="manufacturers-item" href="#"><img alt="Компания Bosh" height="37" src="img/bosch.png" width="126"></a> <a class="manufacturers-item" href="#"><img alt="Компания Makita" height="40" src="img/makita.png" width="123"></a> <a class="manufacturers-item" href="#"><img alt="Компания Dewalt" height="44" src="img/dewalt.png" width="146"></a> <a class="manufacturers-item" href="#"><img alt="Компания Интерскол" height="88" src="img/interscol.png" width="200"></a> <a class="manufacturers-item" href="#"><img alt="Компания Hitachi" height="31" src="img/hitachi.png" width="169"></a> <a class="manufacturers-item" href="#"><img alt="Компания Lg" height="73" src="img/lg.png" width="121"></a> <a class="manufacturers-item" href="#"><img alt="Компания Aeg" height="96" src="img/aeg.png" width="151"></a> <a class="manufacturers-item" href="#"><img alt="Компания Metabo" height="69" src="img/metabo.png" width="204"></a>
+					</div>
+				</section>
+			</div>
+
+			<section class="services">
+				<div class="container">
+					<h2>
+						Сервисы
+					</h2>
+
+					<p>
+						Хороший интернет-магазин отличается от плохого не только ценами!
+					</p>
+
+					<p class="services-text">
+						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+					</p>
 					<!-- slider -->
-					<section class="slider">
-						<h2 class="visually-hidden">Реклама инструмента</h2>
-						<ul class="slider-controls">
-							<li class="active"></li>
-							<li></li>
-						</ul>
 
-						<button class="prev"></button>
-						<button class="next"></button>
+					<div class="slider-wrapper">
+						<input checked id="btn-1" name="toggle" type="radio"> <input id="btn-2" name="toggle" type="radio"> <input id="btn-3" name="toggle" type="radio">
+						<div class="services-option">
+							<label for="btn-1" tabindex="0">Доставка</label> <label for="btn-2" tabindex="0">Гарантия</label> <label for="btn-3" tabindex="0">Кредит</label>
+						</div>
 
-						<ul class="slider-list">
-							<li class="slider-item slide-1">
-								<div class="text-promo-item">
-									<h3>Перфораторы</h3>
-									<p>Настоящие мужские игрушки</p>
+						<ul class="services-list">
+							<li class="services-item services-slide-1">
+								<div class="item-descr">
+									<h3>
+										Доставка
+									</h3>
+
+									<p>
+										Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+									</p>
+
+									<p>
+										Ведь мы неплохо заработаем,
+									</p>
+
+									<p>
+										поднимая его на ваш этаж!
+									</p>
 								</div>
-								<a class="button button-slide" href="inner.html">Открыть каталог</a>
+
+								<div class="item-image">
+									<span class="visually-hidden">Картинка автомобиля</span>
+								</div>
 							</li>
-							<li class="slider-item">
-								<div class="text-promo-item">
-									<h3>Дрели</h3>
-									<p>Соседям на радость!</p>
+
+							<li class="services-item services-slide-2">
+								<h3>
+									Гарантия
+								</h3>
+
+								<p>
+									Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+								</p>
+
+								<p>
+									Дом уж восстановите как-нибудь сами.
+								</p>
+
+								<div class="item-image">
+									<span class="visually-hidden">Картинка гарантии</span>
 								</div>
-								<a class="button button-slide" href="inner.html">Открыть каталог</a>
+							</li>
+
+							<li class="services-item services-slide-3">
+								<h3>
+									Кредит
+								</h3>
+
+								<p>
+									Залезть в долговую яму стало проще!
+								</p>
+
+								<p>
+									Кредитные консультанты придут вам на помощь.
+								</p>
+								<a class="button button-services" href="#">Отправить заявку</a>
+								<div class="item-image">
+									<span class="visually-hidden">Картинка кредит</span>
+								</div>
 							</li>
 						</ul>
-					</section>
+					</div>
 					<!-- end slider -->
 				</div>
-
 			</section>
 
-			<section class="popular-products">
-				<div class="popular-wrapper">
-					<h2>Популярные товары:</h2>
-
-					<a class="button button-popular" href="#">Все популярные товары</a>
-				</div>
-
-				<ul class="products-list">
-					<li class="products-item">
-						<div class="flag"><span class="visually-hidden">не новинка</span></div>
-						<div class="buttons-actions">
-							<a class="button button-buy" href="#"><svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" width="15"
-								 height="15" fill="#ffffff">
-									<circle cx="4.5" cy="13.5" r="1.5" />
-									<circle cx="12.5" cy="13.5" r="1.5" />
-									<path d="M15 2H4.07l-.422-2H0v2h2.03l1.985 9H15V9H9.44L15 6.95z" /></svg>Купить</a>
-							<a class="button button-bookmarks" href="#">В закладки</a>
-						</div>
-						<div class="image"><img src="img/bfg-9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000"></div>
-						<h3>Перфоратор BOSCH BFG 9000</h3>
-						<p class="discount">32500 Р.</p>
-						<a class="button	button-price" href="#">25500 Р.</a>
-					</li>
-
-					<li class="products-item">
-						<div class="flag"><span class="visually-hidden">не новинка</span></div>
-						<div class="buttons-actions">
-							<a class="button button-buy" href="#"><svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" width="15"
-								 height="15" fill="#ffffff">
-									<circle cx="4.5" cy="13.5" r="1.5" />
-									<circle cx="12.5" cy="13.5" r="1.5" />
-									<path d="M15 2H4.07l-.422-2H0v2h2.03l1.985 9H15V9H9.44L15 6.95z" /></svg>Купить</a>
-							<a class="button button-bookmarks" href="#">В закладки</a>
-						</div>
-						<div class="image"><img src="img/bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></div>
-						<h3>Перфоратор BOSCH BFG 3000</h3>
-						<p class="discount">22500 Р.</p>
-						<a class="button	button-price" href="#">15500 Р.</a>
-					</li>
-
-					<li class="products-item">
-						<div class="flag"><span class="visually-hidden">не новинка</span></div>
-						<div class="buttons-actions">
-							<a class="button button-buy" href="#"><svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" width="15"
-								 height="15" fill="#ffffff">
-									<circle cx="4.5" cy="13.5" r="1.5" />
-									<circle cx="12.5" cy="13.5" r="1.5" />
-									<path d="M15 2H4.07l-.422-2H0v2h2.03l1.985 9H15V9H9.44L15 6.95z" /></svg>Купить</a>
-							<a class="button button-bookmarks" href="#">В закладки</a>
-						</div>
-						<div class="image"><img src="img/bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></div>
-						<h3>Перфоратор BOSCH BFG 6000</h3>
-						<p class="discount">30500 Р.</p>
-						<a class="button	button-price" href="#">25500 Р.</a>
-					</li>
-
-					<li class="products-item">
-						<div class="flag flag-new"><span class="visually-hidden">новинка</span></div>
-						<div class="buttons-actions">
-							<a class="button button-buy" href="#"><svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" width="15"
-								 height="15" fill="#ffffff">
-									<circle cx="4.5" cy="13.5" r="1.5" />
-									<circle cx="12.5" cy="13.5" r="1.5" />
-									<path d="M15 2H4.07l-.422-2H0v2h2.03l1.985 9H15V9H9.44L15 6.95z" /></svg>Купить</a>
-							<a class="button button-bookmarks" href="#">В закладки</a>
-						</div>
-						<div class="image"><img src="img/bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></div>
-						<h3>Перфоратор BOSCH BFG 2000</h3>
-						<p class="discount"><span class="visually-hidden">Без цены со скидкой</span></p>
-						<a class="button	button-price" href="#">12500 Р.</a>
-					</li>
-				</ul>
-			</section>
-
-			<section class="popular-manufacturers">
-				<div class="popular-wrapper">
-					<h2>Популярные производители:</h2>
-
-					<a class="button button-popular" href="#">Все производители</a>
-				</div>
-
-				<div class="manufacturers-list">
-					<a href="#" class="manufacturers-item">
-						<img src="img/bosch.png" width="126" height="37" alt="Компания Bosh">
-					</a>
-
-					<a href="#" class="manufacturers-item">
-						<img src="img/makita.png" width="123" height="40" alt="Компания Makita">
-					</a>
-
-					<a href="#" class="manufacturers-item">
-						<img src="img/dewalt.png" width="146" height="44" alt="Компания Dewalt">
-					</a>
-
-					<a href="#" class="manufacturers-item">
-						<img src="img/interscol.png" width="200" height="88" alt="Компания Интерскол">
-					</a>
-
-					<a href="#" class="manufacturers-item">
-						<img src="img/hitachi.png" width="169" height="31" alt="Компания Hitachi">
-					</a>
-
-					<a href="#" class="manufacturers-item">
-						<img src="img/lg.png" width="121" height="73" alt="Компания Lg">
-					</a>
-
-					<a href="#" class="manufacturers-item">
-						<img src="img/aeg.png" width="151" height="96" alt="Компания Aeg">
-					</a>
-
-					<a href="#" class="manufacturers-item">
-						<img src="img/metabo.png" width="204" height="69" alt="Компания Metabo">
-					</a>
-				</div>
-			</section>
-		</div>
-
-		<section class="services">
 			<div class="container">
-				<h2>Сервисы</h2>
+				<div class="index-column">
+					<section class="about-company">
+						<h2>
+							Компания «Техномарт»
+						</h2>
 
-				<p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-				<p class="services-text"> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+						<p>
+							Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+						</p>
 
-				<!-- slider -->
-				<div class="slider-wrapper">
-					<input type="radio" id="btn-1" name="toggle" checked>
-					<input type="radio" id="btn-2" name="toggle">
-					<input type="radio" id="btn-3" name="toggle">
+						<p class="about-text-item1">
+							Мы можем доставить ваш товар в самые отдаленные точки России!
+						</p>
 
-					<div class="services-option">
-						<label tabindex="0" for="btn-1">Доставка</label>
-						<label tabindex="0" for="btn-2">Гарантия</label>
-						<label tabindex="0" for="btn-3">Кредит</label>
-					</div>
+						<p class="about-text-item">
+							Техномарт работает со многими транспортными компаниями:
+						</p>
 
-					<ul class="services-list">
-						<li class="services-item services-slide-1">
-							<div class="item-descr">
-								<h3>Доставка</h3>
-								<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-								<p>Ведь мы неплохо заработаем,</p>
-								<p> поднимая его на ваш этаж!</p>
-							</div>
-							<div class="item-image"><span class="visually-hidden">Картинка автомобиля</span></div>
+						<ul class="about-list">
+							<li class="about-item">Деловые линии
+							</li>
+
+							<li class="about-item">Автотрейдинг
+							</li>
+
+							<li class="about-item">ЖелДорЭкспедиция
+							</li>
+						</ul>
+						<a class="button button-about-company" href="#">Подробнее о компании</a>
+					</section>
+
+					<section class="contacts">
+						<h2>
+							Контакты
+						</h2>
+
+						<p class="contacts-text-item1">
+							Вы можете забрать товар сами,
+						</p>
+
+						<p>
+							заехав в наш офис:
+						</p>
+
+						<p class="map-content">
+							<a href="https://goo.gl/maps/psZR3pi3tsL2"><img alt="Большая Конюшенная ул., 19" height="158" src="img/map.jpg" width="300"></a>
+						</p>
+						<a class="button button-contacts" href="#">Заблудились? Напишите Нам!</a>
+					</section>
+				</div>
+			</div>
+		</main>
+
+		<footer class="main-footer">
+			<div class="container">
+				<div class="site-navigation-wrapper">
+					<a class="button logo footer-logo" href="index.html">Техномарт</a>
+					<ul class="site-navigation-footer">
+						<li>
+							<a href="#">Компания</a>
 						</li>
 
-						<li class="services-item services-slide-2">
-							<h3>Гарантия</h3>
-							<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
-								возгаранием,
-								вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
-							<p>Дом уж восстановите
-								как-нибудь сами.</p>
-							<div class="item-image"><span class="visually-hidden">Картинка гарантии</span></div>
+						<li>
+							<a href="#">Новости</a>
 						</li>
 
-						<li class="services-item services-slide-3">
-							<h3>Кредит</h3>
-							<p>Залезть в долговую яму стало проще!</p>
-							<p>Кредитные консультанты придут вам на помощь.</p>
-							<a href="#" class="button button-services">Отправить заявку</a>
-							<div class="item-image"><span class="visually-hidden">Картинка кредит</span></div>
+						<li>
+							<a href="inner.html">Каталог</a>
+						</li>
+
+						<li>
+							<a href="#">Доставка</a>
+						</li>
+
+						<li>
+							<a href="#">Контакты</a>
 						</li>
 					</ul>
 				</div>
-				<!-- end slider -->
+
+				<div class="navigation-promo-footer">
+					<p class="footer-contacts-text">
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
+					</p>
+
+					<ul class="navigation-promo">
+						<li>
+							<a href="#">Материалы</a>
+						</li>
+
+						<li>
+							<a href="#">Техника</a>
+						</li>
+
+						<li>
+							<a href="#">Инструмент</a>
+						</li>
+
+						<li>
+							<a href="#">Спецпредложения</a>
+						</li>
+					</ul>
+				</div>
 			</div>
+
+			<div class="copyright">
+				<div class="container">
+					<p class="text-copyright">
+						© 2010–2018 Компания «Техномарт» Все права защищены
+					</p>
+
+					<ul class="social-footer">
+						<li>
+							<a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span> <svg height="15" width="26" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.138 11.5c.956-.31 2.18 2.04 3.483 2.94.978.68 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.07-.12-.503-1.07-2.585-3.022-2.177-2.043-1.882-1.712.74-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.54-1.365-.4-1.365-.4L20.7.713c-.38.001-.704.12-.85.515-.003.004-.62 1.666-1.445 3.08-1.74 2.99-2.436 3.148-2.724 2.96-.66-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.74-.172-1.828-.182-1.392-.02-2.574 0-3.244.33-.445.223-.786.712-.58.74.26.035.843.16 1.155.586.4.552.39 1.79.39 1.79s.23 3.41-.54 3.834c-.528.3-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.44c-.25-.185-.6-.244-.6-.244L.848.684S.3.7.085.946c-.182.218-.015.668-.015.668s2.91 6.88 6.203 10.347c3.02 3.182 6.452 2.97 6.452 2.97h1.555s.47-.054.71-.312c.224-.24.214-.69.214-.69s-.03-2.11.935-2.42z" fill="#fff"></path></svg></a>
+						</li>
+
+						<li>
+							<a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span> <svg height="22" width="12" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"></path></svg></a>
+						</li>
+
+						<li>
+							<a class="social-button" href="#"><span class="visually-hidden">Инстаграмм</span> <svg height="21" width="21" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18 0H3a3.01 3.01 0 0 0-3 3v15a3.01 3.01 0 0 0 3 3h15a3.01 3.01 0 0 0 3-3V3a3.01 3.01 0 0 0-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.18c-.114.482-.18.983-.18 1.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z" fill="#fff"></path></svg></a>
+						</li>
+					</ul>
+
+					<ul class="copyright-links">
+						<li class="text-link">
+							<p>
+								Обратная связь:
+							</p>
+
+							<p>
+								<a class="mail-link" href="#">mail@htmlacademy.ru</a>
+							</p>
+						</li>
+
+						<li class="text-link">
+							<p>
+								Разработано —
+							</p>
+
+							<p>
+								<a class="site-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- modal-blocks -->
+
+		<section class="modal modal-login">
+			<h2 class="visually-hidden">
+				Форма регистрации
+			</h2>
+
+			<form action="https://echo.htmlacademy.ru" class="form-login" method="post">
+				<div class="modal-container">
+					<p class="user-input">
+						<label for="name">Ваше имя:</label> <input id="name" name="user-name" placeholder="Имя Фамилия" type="text">
+					</p>
+
+					<p class="user-input">
+						<label for="mail">Ваш e-mail:</label> <input id="mail" name="user-mail" placeholder="email@example.com" type="text">
+					</p>
+
+					<p class="message-input">
+						<label for="message">Текст письма:</label> 
+
+						<textarea cols="30" id="message" name="user-message" placeholder="В свободной форме" rows="5"></textarea>
+					</p>
+				</div>
+
+				<div class="buttons-wrapper">
+					<div class="modal-container">
+						<button class="button button-login" type="submit">Отправить</button>
+					</div>
+				</div>
+			</form>
+			<button aria-label="Закрыть" class="button-close" type="button"></button>
 		</section>
 
-		<div class="container">
-			<div class="index-column">
-				<section class="about-company">
-					<h2>Компания «Техномарт»</h2>
+		<section class="modal modal-map">
+			<h2 class="visually-hidden">
+				Как до нас добраться
+			</h2>
+			<iframe allowfullscreen height="446" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586862!2d30.320853351715876!3d59.93871648178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1544995707968" width="940"></iframe>
+			<p>
+				<img alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" height="446" src="img/map-popup.jpg" width="940">
+			</p>
+			<button class="map-close-js button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+		</section>
 
-					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-						равнодушными любителей сэкономить на гастарбайтерах.</p>
+		<section class="modal modal-in-cart">
+			<h2 class="visually-hidden">
+				Товар в корзине
+			</h2>
 
-					<p class="about-text-item1">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
-					<p class="about-text-item"> Техномарт работает со многими транспортными компаниями:</p>
-
-					<ul class="about-list">
-						<li class="about-item">Деловые линии</li>
-						<li class="about-item">Автотрейдинг</li>
-						<li class="about-item">ЖелДорЭкспедиция</li>
-					</ul>
-
-					<a class="button button-about-company" href="#">Подробнее о компании</a>
-				</section>
-
-				<section class="contacts">
-					<h2>Контакты</h2>
-					<p class="contacts-text-item1">Вы можете забрать товар сами,</p>
-					<p>заехав в наш офис:</p>
-					<p class="map-content">
-						<a href="img/map-popup.jpg"><img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19"></a>
-					</p>
-					<a class="button button-contacts" href="#">Заблудились? Напишите Нам!</a>
-				</section>
-			</div>
-		</div>
-	</main>
-
-	<footer class="main-footer">
-		<div class="container">
-			<div class="site-navigation-wrapper">
-				<a class="button logo footer-logo" href="index.html">Техномарт</a>
-
-				<ul class="site-navigation-footer">
-					<li><a href="#">Компания</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="inner.html">Каталог</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</div>
-
-			<div class="navigation-promo-footer">
-				<p class="footer-contacts-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
-
-				<ul class="navigation-promo">
-					<li><a href="#">Материалы</a></li>
-					<li><a href="#">Техника</a></li>
-					<li><a href="#">Инструмент</a></li>
-					<li><a href="#">Спецпредложения</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="copyright">
-
-			<div class="container">
-				<p class="text-copyright">
-					© 2010–2018 Компания «Техномарт»
-					Все права защищены
-				</p>
-
-				<ul class="social-footer">
-					<li>
-						<a href="#" class="social-button"><span class="visually-hidden">Вконтакте</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="26" height="15">
-								<path d="M16.138 11.5c.956-.31 2.18 2.04 3.483 2.94.978.68 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.07-.12-.503-1.07-2.585-3.022-2.177-2.043-1.882-1.712.74-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.54-1.365-.4-1.365-.4L20.7.713c-.38.001-.704.12-.85.515-.003.004-.62 1.666-1.445 3.08-1.74 2.99-2.436 3.148-2.724 2.96-.66-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.74-.172-1.828-.182-1.392-.02-2.574 0-3.244.33-.445.223-.786.712-.58.74.26.035.843.16 1.155.586.4.552.39 1.79.39 1.79s.23 3.41-.54 3.834c-.528.3-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.44c-.25-.185-.6-.244-.6-.244L.848.684S.3.7.085.946c-.182.218-.015.668-.015.668s2.91 6.88 6.203 10.347c3.02 3.182 6.452 2.97 6.452 2.97h1.555s.47-.054.71-.312c.224-.24.214-.69.214-.69s-.03-2.11.935-2.42z"
-								 fill="#fff" /></svg>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="social-button"><span class="visually-hidden">Фейсбук</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22">
-								<path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="social-button"><span class="visually-hidden">Инстаграмм</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21">
-								<path d="M18 0H3a3.01 3.01 0 0 0-3 3v15a3.01 3.01 0 0 0 3 3h15a3.01 3.01 0 0 0 3-3V3a3.01 3.01 0 0 0-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.18c-.114.482-.18.983-.18 1.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"
-								 fill="#fff" /></svg>
-						</a>
-					</li>
-				</ul>
-
-				<ul class="copyright-links">
-					<li class="text-link">
-						<p>Обратная связь:</p>
-						<p><a class="mail-link" href="#">mail@htmlacademy.ru</a></p>
-					</li>
-
-					<li class="text-link">
-						<p>Разработано —</p>
-						<p><a class="site-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-
-	</footer>
-
-	<!-- modal-blocks -->
-
-	<section class="modal modal-login">
-
-		<h2 class="visually-hidden">Форма регистрации</h2>
-		<form class="form-login" action="https://echo.htmlacademy.ru" method="post">
 			<div class="modal-container">
-				<p class="user-input">
-					<label for="name">Ваше имя:</label>
-					<input type="text" id="name" name="user-name" placeholder="Имя Фамилия">
-				</p>
-
-				<p class="user-input">
-					<label for="mail">Ваш e-mail:</label>
-					<input type="text" id="mail" name="user-mail" placeholder="email@example.com">
-				</p>
-
-				<p class="message-input">
-					<label for="message">Текст письма:</label>
-					<textarea name="user-message" id="message" placeholder="В свободной форме" cols="30" rows="3"></textarea>
+				<p class="product-checked">
+					<svg height="66" width="66" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="33" cy="33" fill="#63A63E" r="33"></circle>
+					<path d="M49.64 21.066c-.39-.39-1.025-.39-1.414 0l-18.44 18.438c-.39.39-1.025.39-1.414 0l-8.14-8.14c-.39-.39-1.025-.39-1.414 0L15.285 34.9c-.39.39-.39 1.025 0 1.414l13.09 13.1c.39.39 1.025.39 1.414 0l23.388-23.388c.39-.39.39-1.025 0-1.414l-3.535-3.536z" fill="#fff"></path></svg> Товар добавлен в корзину!
 				</p>
 			</div>
+
 			<div class="buttons-wrapper">
 				<div class="modal-container">
-					<button class="button button-login" type="submit">Отправить</button>
+					<a class="button button-cart" href="#">Оформить заказ</a> <button class="button button-continue" type="button">Продолжить покупки</button>
 				</div>
 			</div>
-		</form>
-		<button type="button" class="button-close" aria-label="Закрыть"></button>
-	</section>
-
-	<section class="modal modal-map">
-		<h2 class="visually-hidden">
-			Как до нас добраться
-		</h2>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586862!2d30.320853351715876!3d59.93871648178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1544995707968"
-		 width="940" height="446" allowfullscreen></iframe>
-		<p>
-			<img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-		</p>
-		<button class="map-close-js button-close" type="button">
-			<span class="visually-hidden">Закрыть</span>
-		</button>
-	</section>
-
-	<section class="modal modal-in-cart">
-		<h2 class="visually-hidden">Товар в корзине</h2>
-		<div class="modal-container">
-			<p class="product-checked"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66">
-					<circle cx="33" cy="33" r="33" fill="#63A63E" />
-					<path d="M49.64 21.066c-.39-.39-1.025-.39-1.414 0l-18.44 18.438c-.39.39-1.025.39-1.414 0l-8.14-8.14c-.39-.39-1.025-.39-1.414 0L15.285 34.9c-.39.39-.39 1.025 0 1.414l13.09 13.1c.39.39 1.025.39 1.414 0l23.388-23.388c.39-.39.39-1.025 0-1.414l-3.535-3.536z"
-					 fill="#fff" /></svg>
-				Товар добавлен в корзину!
-			</p>
-		</div>
-		<div class="buttons-wrapper">
-			<div class="modal-container">
-				<a href="#" class="button button-cart">Оформить заказ</a>
-				<button class="button button-continue" type="button">Продолжить покупки</button>
-			</div>
-		</div>
-		<button type="button" class="button-in-cart button-close" aria-label="Закрыть"></button>
-	</section>
-
-	<script src="js/script.min.js"></script>
-</body>
-
+			<button aria-label="Закрыть" class="button-in-cart button-close" type="button"></button>
+		</section>
+		<script src="js/script.min.js">
+		</script>
+	</body>
 </html>
