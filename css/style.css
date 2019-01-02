@@ -476,13 +476,13 @@ img {
 	background-color: #ffffff;
 }
 
-.user-navigation .link-login {
+.user-login .link-login {
 	font: inherit;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -490,6 +490,15 @@ img {
 	-ms-flex-align: start;
 	align-items: flex-start;
 	padding-left: 13px;
+}
+
+.name-login {
+	width: 186px;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
 }
 
 .svg-user {
