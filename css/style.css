@@ -1191,10 +1191,10 @@ img {
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
 	-ms-flex-line-pack: start;
-	    align-content: flex-start;
+	align-content: flex-start;
 	justify-content: flex-start;
 	margin: 0;
 	margin-left: -20px;
@@ -1207,7 +1207,7 @@ img {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	list-style: none;
