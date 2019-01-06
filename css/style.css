@@ -62,7 +62,7 @@ img {
 }
 
 .main-header {
-	padding-bottom: 60px;
+	padding-bottom: 59px;
 	margin-bottom: 59px;
 	background-color: #f3f7f9;
 }
@@ -659,7 +659,7 @@ img {
 	-ms-flex-item-align: center;
 	-ms-grid-row-align: center;
 	align-self: center;
-	padding: 20px 30px 18px;
+	padding: 20px 30px 19px;
 	color: #ffffff;
 	font-size: 17px;
 	line-height: 17px;
