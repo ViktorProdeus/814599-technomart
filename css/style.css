@@ -376,8 +376,9 @@ img {
 	position: relative;
 	margin: 0;
 	margin-bottom: 3px;
+	margin-top: 4px;
 	padding-left: 70px;
-	padding-top: 12px;
+	padding-top: 9px;
 	padding-bottom: 9px;
 	padding-right: 45px;
 	font-size: 21px;
@@ -395,7 +396,7 @@ img {
 	width: 19px;
 	height: 19px;
 	top: 10px;
-	left: 13px;
+	left: 11px;
 	background-color: #f4f8f9;
 	background-image: url("../img/icon-phone.svg");
 	background-repeat: no-repeat;
@@ -495,10 +496,10 @@ img {
 .name-login {
 	width: 186px;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	overflow: hidden;
 	-o-text-overflow: ellipsis;
-	   text-overflow: ellipsis;
+	text-overflow: ellipsis;
 }
 
 .svg-user {
@@ -658,7 +659,7 @@ img {
 	-ms-flex-item-align: center;
 	-ms-grid-row-align: center;
 	align-self: center;
-	padding: 22px 30px 18px;
+	padding: 20px 30px 18px;
 	color: #ffffff;
 	font-size: 17px;
 	line-height: 17px;
@@ -728,7 +729,7 @@ img {
 
 .page-title {
 	padding: 30px;
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -779,7 +780,7 @@ img {
 }
 
 .filter .filter-manufacturers {
-	margin-bottom: 19px;
+	margin-bottom: 17px;
 }
 
 .filter legend {
@@ -801,8 +802,8 @@ img {
 .range-controls {
 	position: relative;
 	height: 41px;
-	margin-bottom: 10px;
-	padding-top: 39px;
+	margin-bottom: 9px;
+	padding-top: 38px;
 	padding-right: 20px;
 	padding-left: 20px;
 	background-color: #f7f3ec;
@@ -822,7 +823,7 @@ img {
 
 .range-controls .toggle {
 	position: absolute;
-	top: 31px;
+	top: 29px;
 	left: 0;
 	width: 4px;
 	height: 4px;
@@ -893,6 +894,10 @@ img {
 	margin: 0;
 	padding-left: 35px;
 	padding-bottom: 20px;
+}
+
+.filter-manufacturers .filter-option:last-child {
+	padding-bottom: 23px;
 }
 
 .filter-option label {
@@ -1064,7 +1069,7 @@ img {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
-	padding: 10px 5px 10px 19px;
+	padding: 9px 5px 10px 19px;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: 400;
 	font-size: 13px;
@@ -1185,16 +1190,27 @@ img {
 	flex-wrap: wrap;
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-ms-flex-line-pack: start;
+	    align-content: flex-start;
 	justify-content: flex-start;
+	margin: 0;
+	margin-left: -20px;
+	padding: 0;
+	list-style: none;
 }
 
-.promo-items-column {
+.promo-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-left: -20px;
+	    flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .promo-item {
@@ -1285,12 +1301,10 @@ img {
 	background-color: #dc91d8;
 }
 
-.promo-wrapper {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-box-ordinal-group: 3;
-	-ms-flex-order: 2;
-	order: 2;
+.promo-items-wrapp {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .promo-discount {
@@ -1305,9 +1319,6 @@ img {
 
 .slider {
 	position: relative;
-	-webkit-box-ordinal-group: 2;
-	-ms-flex-order: 1;
-	order: 1;
 	margin-bottom: 20px;
 }
 
@@ -1473,7 +1484,7 @@ img {
 }
 
 .popular-manufacturers {
-	margin-bottom: 68px;
+	margin-bottom: 65px;
 }
 
 .popular-wrapper {
@@ -1556,7 +1567,7 @@ img {
 	left: 0;
 	width: 218px;
 	height: 88px;
-	padding: 40px 0;
+	padding: 44px 0;
 	background-color: rgba(255, 255, 255, 1);
 	z-index: 10;
 	display: none;
@@ -1741,7 +1752,7 @@ img {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	min-height: 143px;
+	min-height: 145px;
 	width: 220px;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -2083,7 +2094,7 @@ img {
 
 .about-tools {
 	padding: 65px 0;
-	padding-bottom: 67px;
+	padding-bottom: 70px;
 	background-color: #f2f6f8;
 }
 
@@ -2108,7 +2119,7 @@ img {
 	margin: 0;
 	padding: 0;
 	margin-top: 33px;
-	margin-bottom: 60px;
+	margin-bottom: 59px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2129,6 +2140,7 @@ img {
 .pagination-item a {
 	display: block;
 	padding: 8px;
+	padding-bottom: 9px;
 	font-family: "PT Sans", Arial, serif;
 	font-weight: 400;
 	font-size: 13px;
@@ -2174,7 +2186,7 @@ img {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-bottom: 28px;
+	margin-bottom: 30px;
 }
 
 .footer-logo {
@@ -2188,9 +2200,9 @@ img {
 }
 
 .site-navigation-footer {
-	width: 548px;
+	width: 549px;
 	margin: 0;
-	padding: 39px 0 5px;
+	padding: 37px 0 5px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2253,18 +2265,19 @@ img {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	width: 526px;
+	width: 529px;
 	list-style: none;
 }
 
 .navigation-promo li:not(:last-child) {
-	margin-right: 60px;
+	margin-right: 55px;
 }
 
 .navigation-promo a {
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffd180;
+	margin-left: 4px;
 }
 
 .navigation-promo a:hover,
